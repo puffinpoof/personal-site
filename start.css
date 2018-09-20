@@ -26,6 +26,15 @@ body{
     
 }
 
+#linediv{
+    height: 20px;
+    width: 2400px;
+    margin-left: -1000px;
+    background-color: #FFFF00;
+    opacity: 0.5;
+    background-blend-mode: overlay;
+}
+
 .btn{
     width: 150px;
     border-color: #88D2A9;
