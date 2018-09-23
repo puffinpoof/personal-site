@@ -55,29 +55,78 @@
 		<div class="col-lg-5 col-md-7 col-sm-9 col-xs-10">
 			<div class="blank"></div>
 			<div id="section2"> 
-		      	<div class="blank"></div>
+		      	<div style="height: 100px;"></div>
 		      	<h1>R&eacutesum&eacute</h1>
 		      	<p>I’m currently a sophomore at Northwestern, and I am looking for an internship in the IT industry in the summer of 2019. Skills wise, I have learned and done projects with <b>C++, Racket (educational Lisp), HTML, CSS,</b> and <b>JavaScript</b>; I also have some knowledge of <b>GitHub, UNIX,</b> as well as <b>Bootstrap</b>, which I used to build this website. For more details, download my r&eacutesum&eacute below:</p>
 
 		      	<a href="Resume.pdf" role="button" class="btn btn-lg" target="_blank">Download</a>
 		      </div>
 		      <div class="blank"></div>
-		      <div id="linediv"></div>
-		      <div class="blank"></div>
-		      <div id="section3">         
+		</div>
+		<div class="col-lg-3 col-md-1"></div>
+	</div>
+	<div id="linediv"></div>
+	<div class="blank"></div>
+	<div class="row" id="thirdrow">
+		<div class="col-lg-4 col-md-4 col-sm-3 col-xs-2"></div>
+		<div class="col-lg-8 col-md-8 col-sm-9 col-xs-10">
+			<div id="section3">         
 		      	<h1>Art & Design</h1>
 		      	<p>Try to scroll this section and look at the navigation list while scrolling! Lorem ipsum dolor sit amet, et mel dicat honestatis, ius denique expetendis disputando ut. Liber voluptatum sadipscing ea mel, duo ne fugit appetere adipisci, pri nibh epicurei ea. Discere graecis invenire qui ne, ei albucius vituperata nec. His tale zril ex. In sed habeo splendide referrentur.</p>
+
+		      	<h3>Photography</h3>
+		      	<div class="ro">
+				  <div class="col">
+				    <img src="photo/shore.jpg" alt="Self Portrait by the Water" onclick="openImg(this);">
+				  </div>
+				  <div class="col">
+				    <img src="photo/Ivy.jpg" alt="Ivy" onclick="openImg(this);">
+				  </div>
+				  <div class="col">
+				    <img src="photo/Still-life.jpg" alt="Still Life with Flowers" onclick="openImg(this);">
+				  </div>
+				  <div class="col">
+				    <img src="photo/WorldOutside.jpg" alt="THe World Outside" onclick="openImg(this);">
+				  </div>
+				</div>
+
+				<!-- The expanding image container -->
+				<div class="cont">
+				  <!-- Close the image -->
+				  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+				  <!-- Expanded image -->
+				  <img id="expandedImg" style="width:100%">
+
+				  <!-- Image text -->
+				  <div id="imgtext"></div>
+				</div>
+
+
+				<div style="height: 200px;"></div>
+		      	<h3>Design</h3>
+
+		      	<h3>Drawing, Sculpture, & Mixed Media</h3>
+
 		      </div>
 		      <div class="blank"></div>
 		      <div id="section4">
 		      	<h1>Writing</h1>
+		      	<p>Try to scroll this section and look at the navigation list while scrolling! Lorem ipsum dolor sit amet, et mel dicat honestatis, ius denique expetendis disputando ut. Liber voluptatum sadipscing ea mel, duo ne fugit appetere adipisci, pri nibh epicurei ea. Discere graecis invenire qui ne, ei albucius vituperata nec. His tale zril ex. In sed habeo splendide referrentur.</p>
 		      </div>
-		      
 		</div>
-		<div class="col-lg-3 col-md-1"></div>
 	</div>
 
 
+	<script>
+	function openImg(imgs) {
+	    var expandImg = document.getElementById("expandedImg");
+	    var imgText = document.getElementById("imgtext");
+	    expandImg.src = imgs.src;
+	    imgText.innerHTML = imgs.alt;
+	    expandImg.parentElement.style.display = "block";
+	}
+</script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
