@@ -17,6 +17,11 @@ body{
 
 }
 
+img{
+    padding-top: 5px;
+    padding-bottom: 25px;
+}
+
 #section1{
     height: 500px;
     width: 360px;
@@ -35,6 +40,8 @@ body{
     opacity: 0.5;
     background-blend-mode: overlay;
 }
+
+
 
 .btn{
     width: 150px;
@@ -75,60 +82,6 @@ ul.nav-pills {
 
 .blank{
     height:150px;
-}
-
-
-
-/* The grid: Four equal columns that floats next to each other */
-.col {
-    float: left;
-    max-width: 30%;
-    padding-right: 10px;
-}
-
-/* Style the images inside the grid */
-.col img {
-    opacity: 0.8; 
-    max-width: 100%;
-    max-height: 150px;
-    cursor: pointer; 
-}
-
-.col img:hover {
-    opacity: 1;
-}
-
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.cont {
-    position: relative;
-    display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-}
-
-/* Closable button inside the image */
-.closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
 }
 
 
