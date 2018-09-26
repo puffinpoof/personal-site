@@ -17,10 +17,6 @@ body{
 
 }
 
-img{
-    margin-top: 5px;
-    margin-bottom: 25px;
-}
 
 #section1{
     height: 500px;
@@ -41,6 +37,9 @@ img{
     background-blend-mode: overlay;
 }
 
+#imagespacing{
+    height: 30px;
+}
 
 
 .btn{
