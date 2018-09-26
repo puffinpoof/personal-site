@@ -88,13 +88,13 @@
 		<div class="col-lg-5 col-md-5"></div>
 		<div class="col-lg-2 col-md-2 col-sm-3">
 			<h4>Photography</h4>
-			<img src="photo/Shore-icon.jpg" alt="Self Portrait by the Water" style="width: 100%;" data-toggle="modal" data-target="#shore">
+			<img src="photo/Shore-icon.jpg" alt="Self Portrait by the Water" style="width: 100%;" class="icon" data-toggle="modal" data-target="#shore">
 			<div id="imagespacing"></div>
-			<img src="photo/Ivy-icon.jpg" alt="Ivy" style="width: 100%;">
+			<img src="photo/Ivy-icon.jpg" alt="Ivy" style="width: 100%;" class="icon" data-toggle="modal" data-target="#ivy">
 			<div id="imagespacing"></div>
-			<img src="photo/Still-icon.jpg" alt="Still Life with Flowers" style="width: 100%;">
+			<img src="photo/Still-icon.jpg" alt="Still Life with Flowers" style="width: 100%;" class="icon" data-toggle="modal" data-target="#floral">
 			<div id="imagespacing"></div>
-			<img src="photo/World-icon.jpg" alt="The World Outside" style="width: 100%;">
+			<img src="photo/World-icon.jpg" alt="The World Outside" style="width: 100%;" class="icon" data-toggle="modal" data-target="#world">
 		</div>
 		<div class="col-lg-2 col-md-2 col-sm-3">
 			<h4>Art</h4>
@@ -133,9 +133,55 @@
 		        <p>Some text in the modal.</p>
 		        <img src="photo/Shore.jpg" alt="Self Portrait by the Water" style="width: 100%;">
 		      </div>
-		      <div class="modal-footer">
-		        
+		      
+		</div>
+		</div>
+	</div>
+
+	<div id="ivy" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-md">
+		<div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Ivy</h4>
 		      </div>
+		      <div class="modal-body">
+		        
+		        <img src="photo/Ivy.jpg" alt="Ivy" style="width: 100%;">
+		      </div>
+		      
+		</div>
+		</div>
+	</div>
+
+	<div id="floral" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Still Life with Flowers</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>I photographed discarded flowers from a flower market.</p>
+		        <img src="photo/Still-life.jpg" alt="Still Life with Flowers" style="width: 100%;">
+		      </div>
+		      
+		</div>
+		</div>
+	</div>
+
+	<div id="world" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-md">
+		<div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">The World Outside</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>This photo received a Scholastic Art & Writing Silver Key award in the photography category, so that actually makes me an award-winning cat photographer. &#x1F638</p>
+		        <img src="photo/WorldOutside.jpg" alt="The World Outside" style="width: 100%;">
+		      </div>
+		      
 		</div>
 		</div>
 	</div>
@@ -144,14 +190,7 @@
 	<div class="blank"></div>
 
 	<script>
-	function openImg(imgs) {
-	    var expandImg = document.getElementById("expandedImg");
-	    var imgText = document.getElementById("imgtext");
-	    expandImg.src = imgs.src;
-	    imgText.innerHTML = imgs.alt;
-	    expandImg.parentElement.style.display = "block";
-	}
-</script>
+	</script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

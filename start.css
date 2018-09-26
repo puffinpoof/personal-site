@@ -83,7 +83,13 @@ ul.nav-pills {
     height:150px;
 }
 
+.icon{
+    transition: 0.3s;
+}
 
+.icon:hover{
+    opacity: 0.7;
+}
 
 
 
