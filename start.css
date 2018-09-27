@@ -17,6 +17,19 @@ body{
 
 }
 
+a{
+    transition:0.3s;
+}
+
+.article{
+    transition:0.3s;
+    color: #4DBEA4;
+}
+
+.article:hover{
+    color: #89D6A9;
+}
+
 
 #section1{
     height: 500px;
