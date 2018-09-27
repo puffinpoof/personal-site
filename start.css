@@ -27,7 +27,7 @@ body{
     
 }
 
-#linediv{
+.linediv{
     height: 21px;
     width: 1900px;
     float: right;
@@ -89,6 +89,7 @@ ul.nav-pills {
 
 .icon:hover{
     opacity: 0.7;
+    cursor: pointer;
 }
 
 
