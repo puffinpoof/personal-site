@@ -1,5 +1,5 @@
 p{
-    font-size: 17px;
+    font-size: 16.5px;
     font-style: light;
     font-family: 'Merriweather', serif;
 }
@@ -27,7 +27,7 @@ a{
 }
 
 .article:hover{
-    color: #89D6A9;
+    color: #00AEEF;
 }
 
 
@@ -62,7 +62,7 @@ a{
     border-style: solid;
     font-weight: bold;
     float: right;
-
+    margin:-5px;
 }
 
 
