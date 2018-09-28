@@ -94,7 +94,11 @@ body{
     }
 
     #topblank{
-        height: 0px;
+        height: 20px;
+        width: 900px;
+        float: right;
+        margin-right: -100px;
+        background-color: #89D6A9;
     }
 
     #boxleft{
@@ -104,6 +108,7 @@ body{
     #section1{
         padding: 0px;
         background-color: white;
+        margin-top: -10px;
     }
 
     p{
