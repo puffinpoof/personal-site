@@ -70,10 +70,28 @@ ul.nav-pills {
     position: fixed;
 }
 
+#topblank{
+    height: 180px;
+}
+
 @media screen and (max-width: 700px) {
-    ul.nav-pills {
-        top: 10%;
+    .nav-pills > li > a {
+        top: 0%;
+        padding: 3px;
+        text-align: center;
+    }
+
+    ul.nav-pills{
+        top:0%;
         position: relative;
+    }
+
+    #topblank{
+        height: 0px;
+    }
+
+    #boxleft{
+        height: 180px;
     }
 }
 
