@@ -14,7 +14,6 @@ body{
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: relative;
-
 }
 
 a{
@@ -69,6 +68,13 @@ a{
 ul.nav-pills {
     top: 33%;
     position: fixed;
+}
+
+@media screen and (max-width: 700px) {
+    ul.nav-pills {
+        top: 10%;
+        position: relative;
+    }
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
