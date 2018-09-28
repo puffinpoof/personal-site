@@ -121,6 +121,7 @@ body{
         width: 1900px;
         float: right;
         margin-right: -100px;
+        margin-top:5px;
         background-color: #FFFF00;
         opacity: 0.5;
         background-blend-mode: overlay;
@@ -132,10 +133,6 @@ body{
 
     body{
         background-image: none;
-    }
-
-    .btn{
-        margin-bottom: 20px;
     }
 }
 
