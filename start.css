@@ -98,12 +98,16 @@ ul.nav-pills {
         height: 180px;
     }
 
+    #section1{
+        padding: 0px;
+    }
+
     p{
-        font-size: 14.5px;
+        font-size: 14.7px;
     }
 
     body{
-        background-color: white;
+        background-image: none;
     }
 }
 
