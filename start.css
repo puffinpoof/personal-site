@@ -133,6 +133,10 @@ body{
     body{
         background-image: none;
     }
+
+    .btn{
+        margin-bottom: 20px;
+    }
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
