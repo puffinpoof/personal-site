@@ -8,13 +8,6 @@ h1{
     font-size: 50px;
 }
 
-body{
-    position: relative;
-    background-image: url("MetroMap.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: relative;
-}
 
 a{
     transition:0.3s;
@@ -72,6 +65,16 @@ ul.nav-pills {
 
 #topblank{
     height: 150px;
+}
+
+@media screen and (min-width: 700px) {
+    body{
+        position: relative;
+        background-image: url("MetroMap.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: relative;
+    }
 }
 
 @media screen and (max-width: 700px) {
