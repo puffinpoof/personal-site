@@ -90,7 +90,7 @@ body{
     }
 
     .blank{
-        height: 50px;
+        height: 40px;
     }
 
     #topblank{
@@ -99,6 +99,7 @@ body{
         float: right;
         margin-right: -100px;
         background-color: #89D6A9;
+        margin-bottom: 20px;
     }
 
     #boxleft{
@@ -108,7 +109,20 @@ body{
     #section1{
         padding: 0px;
         background-color: white;
-        margin-top: -10px;
+    }
+
+    #boxleft{
+        margin-bottom: -70px;
+    }
+
+    #blank2{
+        height: 21px;
+        width: 1900px;
+        float: right;
+        margin-right: -100px;
+        background-color: #FFFF00;
+        opacity: 0.5;
+        background-blend-mode: overlay;
     }
 
     p{
