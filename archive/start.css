@@ -1,0 +1,182 @@
+p{
+    font-size: 16.5px;
+    font-style: light;
+    font-family: 'Merriweather', serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+
+a{
+    transition:0.3s;
+}
+
+.article{
+    transition:0.3s;
+    color: #4DBEA4;
+}
+
+.article:hover{
+    color: #00AEEF;
+}
+
+
+#section1{
+    height: 500px;
+    max-width: 360px;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.linediv{
+    height: 21px;
+    width: 1900px;
+    float: right;
+    margin-right: -100px;
+    background-color: #FFFF00;
+    opacity: 0.5;
+    background-blend-mode: overlay;
+}
+
+#imagespacing{
+    height: 30px;
+}
+
+
+.btn{
+    width: 150px;
+    border-color: #88D2A9;
+    border-width: 5px;
+    border-style: solid;
+    font-weight: bold;
+    float: right;
+    margin-bottom: 5px;
+}
+
+
+ul.nav-pills {
+    top: 33%;
+    position: fixed;
+}
+
+#topblank{
+    height: 145px;
+}
+
+
+body{
+    position: relative;
+    background-image: url("MetroMap.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: relative;
+}
+
+@media screen and (max-width: 700px) {
+    .nav-pills > li > a {
+        top: 0%;
+        padding: 3px;
+        text-align: center;
+        background-color: white;
+    }
+
+    ul.nav-pills{
+        top:0%;
+        position: relative;
+    }
+
+    .blank{
+        height: 40px;
+    }
+
+    #topblank{
+        height: 20px;
+        width: 900px;
+        float: right;
+        margin-right: -100px;
+        background-color: #FFFF00;
+        opacity: 0.5;
+        margin-bottom: 20px;
+    }
+
+    #boxleft{
+        height: 180px;
+    }
+
+    #section1{
+        padding: 0px;
+        background-color: white;
+        margin-bottom: 50px;
+    }
+
+    #boxleft{
+        margin-bottom: -70px;
+    }
+
+    #blank2{
+        height: 21px;
+        width: 110%;
+        margin-top:5px;
+        background-color: #FFFF00;
+        opacity: 0.5;
+        background-blend-mode: overlay;
+    }
+
+    p{
+        font-size: 14.7px;
+    }
+
+    body{
+        background-image: none;
+    }
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+    color: black;
+    background-color: transparent;
+    font-weight: bold;
+
+}
+
+.nav-pills > li > a:hover {
+    background-color: #FFF894;
+    color: #79B8A0;
+}
+.nav-pills > li.active > a:hover {
+    color: black;
+    background-color: #FFF894;
+}
+
+.nav-pills > li > a {
+    color: #7AC7E7;
+    font-weight: bold;
+}
+
+.blank{
+    height:150px;
+}
+
+.icon{
+    transition: 0.3s;
+}
+
+.icon:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+

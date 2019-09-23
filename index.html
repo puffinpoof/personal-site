@@ -1,463 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <!-- CSS spreadsheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Fonts from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display:400,700&display=swap" rel="stylesheet">
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+    <!-- Bootstrap CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
     <title>Amy Yang</title>
+</head>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<body>
+    <!---->
+    <!-- Collapsible navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#" id="navbar-logo">Amy Yang</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">about<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#design">design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#art">art</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/amy-yang0/" target="_blank"><img id="linkedin" src="graphics/linkedin-logo.png"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <div class="container">
+        <div class="spacer"></div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-9">
+                <img class="img-fluid" src="art/portrait.png" alt="Illustrated self portrait">
+            </div>
+        </div>
+        <div class="spacer"></div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <h2 class="text-center subheader">about</h2>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" id="about-text">
+                    <p>“What do you want to do when you grow up?” was a question that stumped me since childhood. In many people’s eyes, my love of art and literature contradicted my knack for math and computer science. </p>
+                    <p>In my first software engineering internship last summer, I happened to sit in on a UX design working session, and I found a place where these disparate parts of my life came together: the visual thinking acquired from years of designing graphics and making art, the empathy accumulated from reading broadly, and the front-end technical skills that help me understand the implementation of UI elements. </p>
+                    <p>I care deeply about making software accessible and delightful to use. It’s not something that could be brushed aside the way some engineers do; good design helps a product fulfill its purpose and expand its impact.</p>
+                    <p>This is what I want to do.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container">
+        <div class="spacer"></div>
+        <h2 class="text-center subheader" id="design">design portfolio</h2>
+        <div class="row">
 
-    <link rel="stylesheet" type="text/css" href="start.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-  </head>
-
-  <body data-spy="scroll" data-target="#boxleft" data-offset="10">
-  	<div class="container">
-	<div class="row" id="firstrow">
-		<div class="col-lg-4 col-md-3" id="boxleft">
-			<ul class="nav nav-pills nav-stacked red" id="bar">
-			      <li class="active"><a href="#section1">About</a></li>
-			      <li><a href="#section2">R&eacutesum&eacute</a></li>
-			      <li><a href="#section3">Art & Design</a></li>
-			      <li><a href="#section4">Writing</a></li>
-			</ul>
-		</div>
-		<div class="col-lg-4 col-md-6">
-			<div id="section1">
-				<div id="topblank"></div>
-				<h1>Hi there </h1>      
-				
-				<p>I’m Amy Yang, a student at Northwestern University studying Communication and Computer Science. In my free time I read (everything), write (creative nonfiction), and learn German (hallo!). On this website you can find my r&eacutesum&eacute, an art portfolio, and a small writing portfolio.</p>
-
-				<p>I am interested in using my skills in programming and design to create products that are meaningful to human life. Get in touch if you would like to work with me, hire me, or just say hello!</p>
-
-				<p style="font-weight:bold;">Email: ay2228 ( at ) hotmail.com</p>
-			
-				<div style="height: 8px;"></div>
-				<a href="https://www.linkedin.com/in/amy-yang-73760a146/" role="button" class="btn btn-lg" target="_blank">LinkedIn</a>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-3"></div>
-	</div>
-	<div class="row" id="secondrow">
-		<div class="col-lg-4 col-md-4 col-sm-3"></div>
-		<div class="col-lg-5 col-md-7 col-sm-9">
-			<div id="blank2" class="blank"></div>
-			<div id="section2"> 
-		      	<div style="height: 100px;"></div>
-		      	<h1>R&eacutesum&eacute</h1>
-		      	<p>I’m currently a sophomore at Northwestern, and I am looking for a tech-related internship in the summer of 2019. Skills wise, I have learned and done projects with <b>C++, Racket (educational Lisp), HTML, CSS,</b> and <b>JavaScript</b>; I also have some knowledge of <b>GitHub, UNIX,</b> as well as <b>Bootstrap</b>, which I used to build this website. For more details, download my r&eacutesum&eacute below:</p>
-
-		      	<a href="Resume.pdf" role="button" class="btn btn-lg" target="_blank">Download</a>
-		      </div>
-		      <div class="blank"></div>
-		</div>
-		<div class="col-lg-3 col-md-1"></div>
-	</div>
-	<div class="linediv"></div>
-	<div class="blank"></div>
-	</div>
-
-	<div class="container">
-	<div id="section3">
-	<div class="row">
-		<div class="col-lg-4 col-md-4 col-sm-3"></div>
-		<div class="col-lg-8 col-md-8 col-sm-9" id="art">
-		      <h1>Art & Design</h1>
-		      <p>Click on the images for a better view, including close-ups of the art pieces!</p>
-
-		</div>
-		<div class="col-lg-1 col-md-1"></div>
-	</div>
-	</div>
-	</div>
-
-	<div class="container-fluid">
-	<div class="row">
-		<div class="col-lg-5 col-md-5 col-sm-3"></div>
-		<div class="col-lg-2 col-md-2 col-sm-3">
-			<h4>Photography</h4>
-			<img src="photo/Shore-icon.jpg" alt="Self Portrait by the Water" style="width: 100%;" class="icon" data-toggle="modal" data-target="#shore">
-			<div id="imagespacing"></div>
-			<img src="photo/Ivy-icon.jpg" alt="Ivy" style="width: 100%;" class="icon" data-toggle="modal" data-target="#ivy">
-			<div id="imagespacing"></div>
-			<img src="photo/Still-icon.jpg" alt="Still Life with Flowers" style="width: 100%;" class="icon" data-toggle="modal" data-target="#floral">
-			<div id="imagespacing"></div>
-			<img src="photo/World-icon.jpg" alt="The World Outside" style="width: 100%;" class="icon" data-toggle="modal" data-target="#world">
-		</div>
-		<div class="col-lg-2 col-md-2 col-sm-3">
-			<h4>Art</h4>
-			<img src="art/jupiter-icon.jpg" alt="Playing God" style="width: 100%;" class="icon" data-toggle="modal" data-target="#jupiter">
-			<div id="imagespacing"></div>
-			<img src="art/anywhere-icon.jpg" alt="Anywhere (Mixed Media)" style="width: 100%;" class="icon" data-toggle="modal" data-target="#anywhere">
-			<div id="imagespacing"></div>
-			<img src="art/thomas-icon.jpg" alt="Thomas the Godwit" style="width: 100%;" class="icon" data-toggle="modal" data-target="#thomas">
-			<div id="imagespacing"></div>
-			<img src="art/shell-icon.jpg" alt="Still Life Sketches" style="width: 100%;" class="icon" data-toggle="modal" data-target="#shell">
-		</div>
-		<div class="col-lg-2 col-md-2 col-sm-3">
-			<h4>Design</h4>
-			<img src="des/screenshots-icon.jpg" alt="FareShare Screenshots" style="width: 100%;" class="icon" data-toggle="modal" data-target="#fareshare">
-			<div id="imagespacing"></div>
-			<img src="des/optima-icon.jpg" alt="Optima Type Poster" style="width: 100%;" class="icon" data-toggle="modal" data-target="#optima">
-			<div id="imagespacing"></div>
-			<img src="des/S2F2-icon.jpg" alt="S2F2 Poster" style="width: 100%;" class="icon" data-toggle="modal" data-target="#s2f2">
-			<div id="imagespacing"></div>
-			<img src="des/dead-icon.jpg" alt="Is He Dead?" style="width: 100%;" class="icon" data-toggle="modal" data-target="#dead">
-		</div>
-		
-	</div>
-	</div>
-	</div>
-
-	<!-- photo modals -->
-	<div id="shore" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">Self Portrait by the Water</h4>
-		      </div>
-		      <div class="modal-body">
-		        <img src="photo/Shore.jpg" alt="Self Portrait by the Water" style="width: 100%; padding-bottom: 10px;">
-		        <p>Photographed with a self-timing camera by Lake Michigan.</p>
-		      </div>
-		      
-		</div>
-		</div>
-	</div>
-
-	<div id="ivy" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-md">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">Ivy</h4>
-		      </div>
-		      <div class="modal-body">
-		        
-		        <img src="photo/Ivy.jpg" alt="Ivy" style="width: 100%;">
-		      </div>
-		      
-		</div>
-		</div>
-	</div>
-
-	<div id="floral" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">Still Life with Flowers</h4>
-		      </div>
-		      <div class="modal-body">
-		        <img src="photo/Still-life.jpg" alt="Still Life with Flowers" style="width: 100%; padding-bottom: 10px;">
-		        <p>I photographed discarded flowers from a flower market.</p>
-		      </div>
-		      
-		</div>
-		</div>
-	</div>
-
-	<div id="world" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-md">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">The World Outside</h4>
-		      </div>
-		      <div class="modal-body">
-		        <p>This photo received a Scholastic Art & Writing Silver Key award, so that technically makes me an award-winning cat photographer! &#x1F638</p>
-		        <img src="photo/WorldOutside.jpg" alt="The World Outside" style="width: 100%;">
-		      </div>
-		      
-		</div>
-		</div>
-	</div>
-
-
-	<!-- art modals -->
-	<div id="jupiter" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">Playing God</h4>
-		      </div>
-		      <div class="modal-body">
-		      	<p>This is a mixed media sculpture made by attaching beads onto a spherical lamp. </p>
-		      	<img src="art/Jupiter.jpg" alt="Jupiter" style="width: 100%; padding-bottom: 10px;">
-		      	<p>A powerless god must manually create planets.</p>
-		      	<img src="art/Jupiter-detail1.jpg" alt="Jupiter" style="width: 100%; padding-bottom: 10px;">
-		      	<p>Work in progress shot:</p>
-		      	<img src="art/jupiter-wip.jpg" alt="Jupiter" style="width: 100%; padding-bottom: 10px;">
-		      </div>
-		      
-		</div>
-		</div>
-	</div>
-
-	<div id="anywhere" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-md">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">Anywhere</h4>
-		      </div>
-		      <div class="modal-body">
-		      	<p>A mixed media piece inspired by the MTA. Winner of the Scholastic Art & Writing Silver Key award in the mixed media category.</p>
-		      	<img src="art/Anywhere.jpg" alt="Anywhere" style="width: 100%; padding-bottom: 10px;">
-		      	<img src="art/Anywhere-detail.jpg" alt="Anywhere-detail" style="width: 100%;">
-		      </div>
-		      
-		</div>
-		</div>
-	</div>
-
-	<div id="thomas" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">Thomas the Godwit</h4>
-		      </div>
-		      <div class="modal-body">
-		      	<p>A mixed media piece based on a bird I saw on a beach in Los Angeles. Beads and acrylic on board. </p>
-		      	<img src="art/Thomas.jpg" alt="Thomas" style="width: 100%; padding-bottom: 10px;">
-		      	<img src="art/Thomas-detail.jpg" alt="Thomas-detail" style="width: 100%; padding-bottom: 10px;">
-		      	<p>Work in progress shot:</p>
-		      	<img src="art/thomas-wip.jpg" alt="Thomas-wip" style="width: 100%;">
-		      </div>
-		      
-		</div>
-		</div>
-	</div>
-
-	<div id="shell" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">Sketches of Shells</h4>
-		      </div>
-		      <div class="modal-body">
-		        <img src="art/shellsketch.jpg" alt="Shell sketch" style="width: 100%; padding-bottom: 10px;">
-		        <p>I read somewhere that an art portfolio should include something to prove that one could draw. I hope this does the job.</p> 
-		        <p> Pen and watercolor on paper. </p>
-		      </div>
-		      
-		</div>
-		</div>
-	</div>
-
-
-	<!-- design modals -->
-	<div id="fareshare" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">FareShare App Mock-ups</h4>
-		      </div>
-		      <div class="modal-body">
-		      	<p>I designed these mock-ups for a ride-sharing app that my friend and I pitched in the 2018 Improve NU contest. The app would connect students who are traveling to the airport at the same time so they could share a ride. </p>
-		      	<img src="des/fareshare/2departure.jpg" alt="screen" style="width: 100%; padding-bottom: 10px;">
-		      	<img src="des/fareshare/3destination.jpg" alt="screen" style="width: 100%; padding-bottom: 10px;">
-		      	<img src="des/fareshare/4time.jpg" alt="screen" style="width: 100%; padding-bottom: 10px;">
-		      	<img src="des/fareshare/5matches.jpg" alt="screen" style="width: 100%;">
-		      </div>
-		      
-		</div>
-		</div>
-	</div>
-
-	<div id="optima" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-md">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">Optima Typography Poster</h4>
-		      </div>
-		      <div class="modal-body">
-		        <p>I designed a typography poster showcasing the font Optima.</p>
-		        <img src="des/optima.jpg" alt="Optima" style="width: 100%;">
-		      </div>
-		</div>
-		</div>
-	</div>
-
-	<div id="s2f2" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-md">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">Shanghai Student Film Festival poster</h4>
-		      </div>
-		      <div class="modal-body">
-		        <p>I designed a poster advertising the Shanghai Student Film Festival in my high school. </p>
-		        <img src="des/S2F2.jpg" alt="Shanghai Student Film Festival poster" style="width: 100%;">
-		      </div>
-		</div>
-		</div>
-	</div>
-
-	<div id="dead" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-md">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">"Is He Dead?" Poster</h4>
-		      </div>
-		      <div class="modal-body">
-		        <img src="des/dead.jpg" alt="Is he dead?" style="width: 100%;">
-		      </div>
-		</div>
-		</div>
-	</div>
-
-
-	<div class="blank"></div>
-	<div class="linediv"></div>
-	<div class="blank"></div>
-
-	<div class="container">
-	<div id="section4">
-	<div class="row">
-		<div class="col-lg-4 col-md-4 col-sm-3"></div>
-		<div class="col-lg-7 col-md-7 col-sm-9">
-			<h1>Writing</h1>
-			<p>This is a small writing portfolio I compiled consisting of a personal essay, a poem, and a satire piece. For more of my writing, visit my profile at <a href="http://www.northbynorthwestern.com/author/amyyang/">North by Northwestern.</a></p>
-			<h3><a class="box article" data-toggle="modal" data-target="#where" style="cursor:pointer;"><u>
-				Where are you from?</u></a>
-			</h3>
-			<p>&ldquo;When people know your origin, they form certain expectations about you. I, however, did not grow up in the same culture as most other Chinese international students who were born and raised in the country.&rdquo;</p>
-			
-			<h3><a class="box article" data-toggle="modal" data-target="#sonnet" style="cursor:pointer;"><u>
-				Calling Home: A Sonnet</u></a>
-			</h3>
-			<p>&ldquo;Sometimes the boundless water that divides<br>us doesn’t really feel like such a long way.&rdquo;</p>
-			
-			<h3><a class="box article" data-toggle="modal" data-target="#nhs" style="cursor:pointer;">
-				<u>Application to the National Honor Society</u></a>
-			</h3>
-			<p>&ldquo;I also work very hard. I have a 4.0. Some people ask me, why do you work so hard? Well, I enjoy smiling smugly when I tell people that I have a 4.0, like I am doing right now.&rdquo;</p>
-		</div>
-		<div class="col-lg-2 col-md-2"></div>
-	</div>
-	</div>
-	</div>
-	<div class="blank"></div>
-
-
-
-	<!--writing modals-->
-	<div id="where" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h3 class="modal-title" style="text-align: center;">Where are you from?</h3>
-		      </div>
-		      <div class="modal-body" style="line-height: 1.75;">
-		      	<div class="row">
-  				<div class="col-md-1"></div>
-  				<div class="col-md-10">
-		      	<p><i>This essay was published in <a href="http://www.northbynorthwestern.com/story/where-are-you-from/" target="_blank">North by Northwestern</a>.</i></p>
-
-		      	<p>“Shanghai, China,” I answered cheerfully whenever someone asked me where I’m from during orientation. It was the most natural answer – I lived in the same city, the same apartment for 15 years. I don’t know another home.</p>
-
-		      	<p>When people know your origin, they form certain expectations about you. I, however, did not grow up in the same culture as most other Chinese international students who were born and raised in the country. My family holds American passports. I spoke English throughout high school and among friends. I can rarely join in the rapid-fire conversations peppered with slang between other students from China, and rarely do I feel at home among them.</p>
-
-		      	<p>“I’m from Shanghai, but I was born in the Bay Area,” I started to tell people, hinting that I’m not as culturally distant as they might otherwise imagine. I’ve been to the Bay Area a few times since my family moved away when I was three. I have relatives there. If I have a second home, that must be it.</p>
-
-		      	<p>On the other hand, my answer reminds me of the pregnant Chinese women who travel to California to give birth to U.S. citizens. These children then grow up in China without much contact with American culture. Unlike them, I am the child of immigrants. My parents’ story, in addition to the American education that I received, forms a significant part of my cultural identity. America is more to me than merely a birthplace.</p>
-
-		      	<p>“I’m originally from California, but I grew up in Shanghai.” I changed my answer once again during the Chinese Student Association social, feeling particularly self-conscious due to how “American” everyone seemed. (The organization is divided into “dynasties,” which sounds very Chinese until one realizes they’re dynasties from Avatar: The Last Airbender.) My answer was in no way false. I am originally from California. I did grow up in Shanghai. Why, then, do I feel dishonest? My accent is American enough for me to pass as “just another Chinese American from California,” and I suppose my new answer gives that impression.</p>
-
-		      	<p>So where am I really from? The truth is, for me, this question is irrelevant. People are not defined by their geographic locations, past or present. I have friends who went to school in the U.S. but remain more in touch with their Chinese background than I do. I also know people who spent nearly all their life in China but remain ignorant of the culture around them. Instead, my cultural identity is shaped by the people and ideas surrounding me. I associated myself with Chinese culture a lot more five years ago, before transferring to an American international school in Shanghai. Then, the texts that I read and the friends that I made added American elements to my identity. At college, I have an even bigger pool of cultural environments to choose from – I even started learning German!</p>
-
-		      	<p>My father likes to talk about roots. “At the end of the day, you are Chinese,” he declares. I disagree. At the end of the day, I am whoever I want to be. I just have to find out who that is.</p>
-		      	</div>
-		      	<div class="col-md-1"></div>
-		      	</div>
-		      </div>
-		</div>
-		</div>
-	</div>
-
-	<div id="sonnet" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-md">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h3 class="modal-title" style="text-align: center;">Calling Home: A Sonnet</h3>
-		      </div>
-		      <div class="modal-body" style="margin-left: 15px;">
-		      	<p>I video call my mother late at night<br>  
-				(roughly at noon on her side of the Earth) <br>
-				to tell a story or some joke that might<br>
-				provoke her ringing laugh. This sound of mirth<br>
-				evokes late evenings, walking by her side<br>
-				in the cool breeze, after a warm day. <br>
-				Sometimes the boundless water that divides  <br>
-				us doesn’t really feel like such a long way. <br>
-				Her voice breaks. “Would you mind repeating that?” <br>
-				I asked her when the crackling fades. <br>
-				And when I try to joke about our cat, <br>
-				her laugh arrives, just a moment late. <br>
-				“No battery left!” And then the screen went black. <br>
-				I wish her face would somehow flicker back.<br></p>
-			</div>
-		</div>
-		</div>
-	</div>
-
-	<div id="nhs" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h3 class="modal-title" style="text-align: center;">Application to the National Honor Society</h3>
-		      </div>
-		      <div class="modal-body">
-		      	<div class="row">
-		      	<div class="col-md-1"></div>
-		      	<div class="col-md-10">
-		      	<p>National Honor Society (NHS) application instructions:<br><i>&ldquo;Membership into the National Honor Society is an honor. The Faculty Council is charged with selecting students who have outstanding achievement in the four pillars: Leadership, Scholarship, Service, and Character. In order to help the faculty council better understand the strengths of your candidacy, write a short essay addressing how you fit the ideals of NHS.&rdquo;</i></p>
-		      	<br>
-		      	<div style="line-height: 1.75;">
-		      	<p>Let me begin by addressing my achievements in the pillar of scholarship. I am very smart, smarter than almost everyone else in my grade; that’s why I belong in NHS. I also work very hard. I have a 4.0. Some people ask me, why do you work so hard? Well, I enjoy smiling smugly when I tell people that I have a 4.0, like I am doing right now. </p>
-		      	<p>Scholarship is very important to me, but my outstanding achievements don’t stop there. Did I mention that I’m in nine clubs and a sports team? I am an exec for five of them, too. Look at this, I am pure leadership material. Everyone wants me to lead (that is, until I got elected and stopped being responsible). But it’s the title that matters, right? It’s fine to ditch a meeting or two here and there... or all of the meetings... As long as I don’t lose my position, I can still reference them when I talk about what a great leader I am. On the downside, you probably haven’t heard of any of these clubs because they are practically nonexistent—except on my resume. </p>
-		      	<p>Of my nine clubs, most of them are service-related because I’m a selfless altruist. (Look at my use of the word “altruist;” it’s proof of my outstanding scholarship.) This aspect of my character makes me fit the NHS ideal of service. I am joining NHS out of my love of serving others. It means nothing to me that NHS is a prestigious-sounding club that looks terrific on my college apps. I’m not sure what NHS does, but you should admit me because I love to serve.</p>
-		      	<p>You may also notice that I am very ambitious from my outstanding achievements in scholarship and leadership. One day, I want to graduate from a top-notch college, earn lots of money, and spend my days climbing the corporate ladder. NHS’s structure echoes my elitist values, and joining this organization is my first noble step in life. </p>
-		      	<p>Thank you for considering me as an applicant. After you have read this application, I am sure you have realized that it is not I who need you, but it is you who need me.</p>
-		      	</div>
-		      	</div>
-		      	<div class="col-md-1"></div>
-		      	</div>
-		      </div>
-		</div>
-	</div>
-	</div>
-
-
-	<script>
-	</script>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+        </div>
+    </div>
+</body>
 </html>

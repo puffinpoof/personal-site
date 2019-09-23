@@ -1,0 +1,68 @@
+/* navbar */
+.navbar{
+    background-color: #f6fafa;
+}
+
+#navbar-logo{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.nav-item{
+    font-family: 'Lato', sans-serif;
+}
+
+#linkedin{
+    height: 28px;
+    padding-top: 2px;
+}
+
+/* fonts in general */
+.subheader{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    line-height: 2;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+}
+
+.spacer{
+    height:60px;
+}
+
+/* about section */
+#about{
+    color: white;
+}
+
+#about-text{
+    font-size: 22px;
+    color: white;
+}
+
+#about{
+    background-color: #32315f;
+    width: 100%;
+    padding: 50px 0;
+}
+
+
+
+/* desktop only */
+@media screen and (min-width: 768px){
+
+}
+
+/* mobile only */
+@media screen and (max-width: 768px){
+
+}
+
+/* adjustments in between */
+@media screen and (min-width: 1200px){
+    #header-name{
+        padding-top: 40px;
+    }
+}
