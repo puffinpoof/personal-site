@@ -25,18 +25,30 @@
     line-height: 2;
 }
 
+h5{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold!important;
+    font-size: 20pt!important;
+}
+
 p{
     font-family: 'Lato', sans-serif;
+    font-size: 15pt;
+}
+
+.large-lato{
+    font-size: 24px;
 }
 
 .spacer{
     height:60px;
 }
 
-/* about section */
-#about{
-    color: white;
+.caption{
+    font-size: 14px;
 }
+
+/* about section */
 
 #about-text{
     font-size: 22px;
@@ -45,11 +57,50 @@ p{
 
 #about{
     background-color: #32315f;
+    color: white;
     width: 100%;
     padding: 50px 0;
 }
 
+/* design portfolio */
+#fam-logo{
+    width: 100%;
+    margin-top: -50px;
+}
 
+.fancy-name{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+}
+
+/* for in-line images */
+.full-width{
+    width: 100%;
+}
+
+.half-width{
+    width: 50%;
+}
+
+#github{
+    margin-top: -20px;
+}
+
+#github:hover {
+    opacity: 0.7;
+}
+
+.smalltext{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    padding-top: 10px;
+}
+
+/* for blockquotes */
+.up-down-padding{
+    padding: 20px 0;
+}
 
 /* desktop only */
 @media screen and (min-width: 768px){
