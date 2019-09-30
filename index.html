@@ -21,7 +21,7 @@
     <title>Amy Yang</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
     <!---->
     <!-- Collapsible navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -32,8 +32,8 @@
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#design">Design</a>
@@ -111,7 +111,6 @@
             </div>
         </div>
         <div class="row">
-            <!--div class="col-lg-2"></div>-->
             <div class="col-lg-1"></div>
             <div class="col-lg-2">
                 <img class="full-width" src="graphics/famiy-tree.PNG">
@@ -230,8 +229,261 @@
             </div>
         </div>
         <div class="spacer"></div>
-        <h5 class="text-center subheader">More projects to come...</h5>
+        <h5 class="text-center">More projects to come...</h5>
     </div>
     <div class="spacer"></div>
+    <div class="container-fluid" id="art">
+        <div class="spacer"></div>
+        <h2 class="text-center subheader" id="art-header">Art & Graphics</h2>
+        <div class="row" id="photo-grid">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <p class="text-center gallery-header">Design</p>
+                    <img src="des/screenshots-icon.jpg" alt="FareShare Screenshots" class="icon" data-toggle="modal" data-target="#fareshare">
+                    <div class="image-spacing"></div>
+                    <img src="des/optima-icon.jpg" alt="Optima Type Poster" class="icon" data-toggle="modal" data-target="#optima">
+                    <div class="image-spacing"></div>
+                    <img src="des/S2F2-icon.jpg" alt="S2F2 Poster" class="icon" data-toggle="modal" data-target="#s2f2">
+                    <div class="image-spacing"></div>
+                    <img src="des/dead-icon.jpg" alt="Is He Dead?" class="icon" data-toggle="modal" data-target="#dead">
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <p class="text-center gallery-header">Art</p>
+                    <img src="art/jupiter-icon.jpg" alt="Playing God" class="icon" data-toggle="modal" data-target="#jupiter">
+                    <div class="image-spacing"></div>
+                    <img src="art/anywhere-icon.jpg" alt="Anywhere (Mixed Media)" class="icon" data-toggle="modal" data-target="#anywhere">
+                    <div class="image-spacing"></div>
+                    <img src="art/thomas-icon.jpg" alt="Thomas the Godwit" class="icon" data-toggle="modal" data-target="#thomas">
+                    <div class="image-spacing"></div>
+                    <img src="art/shell-icon.jpg" alt="Still Life Sketches" class="icon" data-toggle="modal" data-target="#shell">
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <p class="text-center gallery-header">Photography</p>
+                    <img src="photo/Shore-icon.jpg" alt="Self Portrait by the Water" class="icon" data-toggle="modal" data-target="#shore">
+                    <div class="image-spacing"></div>
+                    <img src="photo/Ivy-icon.jpg" alt="Ivy" class="icon" data-toggle="modal" data-target="#ivy">
+                    <div class="image-spacing"></div>
+                    <img src="photo/Still-icon.jpg" alt="Still Life with Flowers" class="icon" data-toggle="modal" data-target="#floral">
+                    <div class="image-spacing"></div>
+                    <img src="photo/World-icon.jpg" alt="The World Outside" class="icon" data-toggle="modal" data-target="#world">
+                </div>
+                
+            </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <h2 class="text-center subheader">Thank you for stopping by!</h2>
+        <div class="spacer"></div>
+    </div>
+
+    <!-- photo modals -->
+	<div id="shore" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Self Portrait by the Water</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img src="photo/Shore.jpg" alt="Self Portrait by the Water" style="width: 100%; padding-bottom: 10px;">
+                    <p>Photographed with a self-timing camera by Lake Michigan.</p>
+                  </div>
+                  
+            </div>
+            </div>
+        </div>
+    
+        <div id="ivy" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Ivy</h4>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <img src="photo/Ivy.jpg" alt="Ivy" style="width: 100%;">
+                  </div>
+                  
+            </div>
+            </div>
+        </div>
+    
+        <div id="floral" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Still Life with Flowers</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img src="photo/Still-life.jpg" alt="Still Life with Flowers" style="width: 100%; padding-bottom: 10px;">
+                    <p>I photographed discarded flowers from a flower market.</p>
+                  </div>
+                  
+            </div>
+            </div>
+        </div>
+    
+        <div id="world" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">The World Outside</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>This photo received a Scholastic Art & Writing Silver Key award, so that technically makes me an award-winning cat photographer! &#x1F638</p>
+                    <img src="photo/WorldOutside.jpg" alt="The World Outside" style="width: 100%;">
+                  </div>
+                  
+            </div>
+            </div>
+        </div>
+    
+    
+        <!-- art modals -->
+        <div id="jupiter" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Playing God</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>This is a mixed media sculpture made by attaching beads onto a spherical lamp. </p>
+                      <img src="art/Jupiter.jpg" alt="Jupiter" style="width: 100%; padding-bottom: 10px;">
+                      <p>A powerless god must manually create planets.</p>
+                      <img src="art/Jupiter-detail1.jpg" alt="Jupiter" style="width: 100%; padding-bottom: 10px;">
+                      <p>Work in progress shot:</p>
+                      <img src="art/jupiter-wip.jpg" alt="Jupiter" style="width: 100%; padding-bottom: 10px;">
+                  </div>
+                  
+            </div>
+            </div>
+        </div>
+    
+        <div id="anywhere" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Anywhere</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>A mixed media piece inspired by the MTA. Winner of the Scholastic Art & Writing Silver Key award in the mixed media category.</p>
+                      <img src="art/Anywhere.jpg" alt="Anywhere" style="width: 100%; padding-bottom: 10px;">
+                      <img src="art/Anywhere-detail.jpg" alt="Anywhere-detail" style="width: 100%;">
+                  </div>
+                  
+            </div>
+            </div>
+        </div>
+    
+        <div id="thomas" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Thomas the Godwit</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>A mixed media piece based on a bird I saw on a beach in Los Angeles. Beads and acrylic on board. </p>
+                      <img src="art/Thomas.jpg" alt="Thomas" style="width: 100%; padding-bottom: 10px;">
+                      <img src="art/Thomas-detail.jpg" alt="Thomas-detail" style="width: 100%; padding-bottom: 10px;">
+                      <p>Work in progress shot:</p>
+                      <img src="art/thomas-wip.jpg" alt="Thomas-wip" style="width: 100%;">
+                  </div>
+                  
+            </div>
+            </div>
+        </div>
+    
+        <div id="shell" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sketches of Shells</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img src="art/shellsketch.jpg" alt="Shell sketch" style="width: 100%; padding-bottom: 10px;">
+                    <p>I read somewhere that an art portfolio should include something to prove that one could draw. I hope this does the job.</p> 
+                    <p> Pen and watercolor on paper. </p>
+                  </div>
+                  
+            </div>
+            </div>
+        </div>
+    
+    
+        <!-- design modals -->
+        <div id="fareshare" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">FareShare App Mock-ups</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>I designed these mock-ups for a ride-sharing app that my friend and I pitched in the 2018 Improve NU contest. The app would connect students who are traveling to the airport at the same time so they could share a ride. </p>
+                      <img src="des/fareshare/2departure.jpg" alt="screen" style="width: 100%; padding-bottom: 10px;">
+                      <img src="des/fareshare/3destination.jpg" alt="screen" style="width: 100%; padding-bottom: 10px;">
+                      <img src="des/fareshare/4time.jpg" alt="screen" style="width: 100%; padding-bottom: 10px;">
+                      <img src="des/fareshare/5matches.jpg" alt="screen" style="width: 100%;">
+                  </div>
+                  
+            </div>
+            </div>
+        </div>
+    
+        <div id="optima" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Optima Typography Poster</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>I designed a typography poster showcasing the font Optima.</p>
+                    <img src="des/optima.jpg" alt="Optima" style="width: 100%;">
+                  </div>
+            </div>
+            </div>
+        </div>
+    
+        <div id="s2f2" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Shanghai Student Film Festival poster</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>I designed a poster advertising the Shanghai Student Film Festival in my high school. </p>
+                    <img src="des/S2F2.jpg" alt="Shanghai Student Film Festival poster" style="width: 100%;">
+                  </div>
+            </div>
+            </div>
+        </div>
+    
+        <div id="dead" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">"Is He Dead?" Poster</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img src="des/dead.jpg" alt="Is he dead?" style="width: 100%;">
+                  </div>
+            </div>
+            </div>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

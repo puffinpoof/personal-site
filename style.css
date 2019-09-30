@@ -13,6 +13,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+.nav-link.active{
+    color: #4f3a65!important;
+}
+
 #linkedin{
     height: 28px;
     padding-right: 2px;
@@ -36,12 +40,37 @@ p{
     font-size: 15pt;
 }
 
+.modal-header
+{
+display: block!important;
+}
+
+.modal-title{
+    float: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.close{
+    float: right;
+}
+
 .large-lato{
     font-size: 24px;
 }
 
+.gallery-header{
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: white;
+}
+
 .spacer{
     height:60px;
+}
+
+.image-spacing{
+    height:50px;
 }
 
 .caption{
@@ -78,6 +107,19 @@ p{
     width: 100%;
 }
 
+.icon{
+    width: 80%;
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
 .half-width{
     width: 50%;
 }
@@ -96,6 +138,16 @@ p{
     font-size: 16px;
     line-height: 1;
     padding-top: 10px;
+}
+
+/* art section */
+#art{
+    background: rgb(87,79,125);
+background: linear-gradient(180deg, rgba(87,79,125,1) 0%, rgba(149,173,190,1) 9%, rgba(223,240,234,1) 13%, rgba(255,255,255,1) 22%);
+}
+
+#art-header{
+    color: white;
 }
 
 /* for blockquotes */
