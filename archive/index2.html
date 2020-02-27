@@ -4,7 +4,7 @@
     <!-- CSS spreadsheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Fonts from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display:400,700&display=swap" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,7 @@
     <title>Amy Yang</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="10" id="bootstrap-overrides">
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
     <!---->
     <!-- Collapsible navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -33,47 +33,211 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#work">work</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">about</a>
+                    <a class="nav-link" href="#design">Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#art">Art</a>
                 </li>
             </ul>
             <ul class="navbar-nav navbar-right">
                 <li class="nav-item">
-                    <a href="https://www.instagram.com/puffinpoof/" target="_blank"><img class="social" src="graphics/instagram.png"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://www.linkedin.com/in/amy-yang0/" target="_blank"><img class="social" src="graphics/linkedin-logo.png"></a>
+                    <a href="https://www.linkedin.com/in/amy-yang0/" target="_blank"><img id="linkedin" src="graphics/linkedin-logo.png"></a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-
-    <div class="container panel" data-color="white">
+    <div class="container">
+        <div class="spacer"></div>
         <div class="row">
-            <div class="col-lg-4">
-                <img id="bag" src="graphics/bag.png" alt="Amy's mixed bag of skills">
+            <div class="col-md-1"></div>
+            <div class="col-md-9">
+                <img class="img-fluid" src="art/portrait.png" alt="Welcome to my website">
             </div>
-            <div class="col-lg-7">
-                <div class="spacer"></div>
-                <h1>oh hi.</h1>
-                <h1>are you here to see my work?</h1>
-                <h4>if so, you're at the right place</h4>
-                <h4>otherwise, have a <a href="http://hkessner.com/wats1020-dom-basics/" target="_blank" class="black-link">fortune cookie</a></h4>
+        </div>
+        <div class="spacer"></div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <h2 class="text-center subheader">About</h2>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" id="about-text">
+                    <p>“What do you want to do when you grow up?” was a question I had trouble answering. In many people’s eyes, my love of art and literature contradicted my knack for math and computer science. </p>
+                    <p>In my first software engineering internship last summer, I happened to sit in on a UX design working session, and I found a place where these disparate parts of my life came together: the visual thinking acquired from years of designing graphics and making art, the empathy accumulated from reading broadly, and the front-end technical skills that help me understand the implementation of UI elements. </p>
+                    <p>I care deeply about making software accessible and delightful to use. It’s not something that could be brushed aside the way some engineers do; good design helps a product fulfill its purpose and expand its impact.</p>
+                    <p>This is what I want to do.</p>
+                </div>
             </div>
         </div>
     </div>
-
-   
-    <div class="container-fluid panel" id="art" data-color="black">
+        
+    <div class="container" id="design">
         <div class="spacer"></div>
+        <h2 class="text-center subheader">Design Portfolio</h2>
+        <div class="spacer"></div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4">
+                <img id="fam-logo" src="graphics/Fam-02.png">
+            </div>
+            <div class="col-lg-2">
+                <h4 class="smalltext">Mentor</h4>
+                <p class="fancy-name">Mark Jung</p>
+                <h4 class="smalltext">UI/UX Design</h4>
+                <p class="fancy-name">Amy Yang</p>
+            </div>
+            <div class="col-lg-2">
+                <h4 class="smalltext">Front End</h4>
+                <p class="fancy-name">Lexi Ryan<br>Amy Yang</p>
+            </div>
+            <div class="col-lg-2">
+                <h4 class="smalltext">Back End</h4>
+                <p class="fancy-name">Yul Hee Kim<br>Nelly Okunlola<br>Ian Wu</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6"><p class="fancy-name"><br>My co-leader of this project, Lexi Ryan, could not remember the names and relationships of the hundreds of relatives at her family reunion. We decided to make an app to help people remember who their relatives are and how they’re related.<br><br></p></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h5>Research</h5>
+                <p>It’s 2019. Families no longer fit in the cookie-cutter mold consisting of a husband, a wife, and their children. Around <a href="https://www.pewresearch.org/fact-tank/2018/04/27/about-one-third-of-u-s-children-are-living-with-an-unmarried-parent/" target="_blank">a third</a> of American children are living with an unmarried parent. Around <a href="https://adoptionnetwork.com/adoption-statistics" target="_blank">7 million</a> Americans are adopted. Same-sex couples are entitled to marry in the same way as heterosexual ones, with full parental rights.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-2">
+                <img class="full-width" src="graphics/famiy-tree.PNG">
+                <p class="caption">Figure 1: Screen shot from the app Family Tree</p>
+            </div>
+            <div class="col-lg-2">
+                <img class="full-width" src="graphics/famiy-tree2.PNG">
+                <p class="caption">Figure 1 detail</p>
+            </div>
+            <div class="col-lg-6">
+                <p>The existing apps for keeping track of family relations focus on biological relations and genealogy. For example, the app Family Tree (Figure 1) only allows users to add their father and mother, placing strict restrictions on the number and gender of parents. Someone might be the adopted child of a same-sex couple, but this app would not acknowledge this relationship. Alternatively, a person might have both biological parents and step-parents who are active in their life, but they must fill their biological parents into the boxes, as if they are still married. It’s easy to imagine how such a design would make many uncomfortable.</p>    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 up-down-padding">
+                <p class="fancy-name">I explored the question: <b>How might we help people keep track of their family relations, no matter what their family looks like?</b></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4">
+                <p>Given our focus on inclusivity, I needed to come up with a system flexible enough to handle relationships of many kinds, such as same-sex relationships, adoptive relationships, and step relationships. I decided to test my designs on the fictional family in the TV show <i>Modern Family</i> because people might be sensitive about their family relationships.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="graphics/tree-horizontal.jpg" class="full-width">
+                <p class="caption">Figure 2: Visualizing how a family tree for <i>Modern Family</i> characters might look like.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4">
+                <img src="graphics/many-ex-wives.jpg" class="full-width">
+                <p class="caption">Figure 3: This stumped me.</p>
+            </div>
+            <div class="col-lg-6">
+                <p>Traditionally, families are thought of as trees. However, divorces, remarriages, and adoptions make it difficult to represent a family as a 2D diagram (Figure 3). The trees I drew based on <i>Modern Family</i> are hard to parse. There didn’t seem to be a fool-proof system that would fit every possible family relationship in a neat way. I realized that perhaps modern families don’t fit in diagrams, and our app doesn’t have to conform to this traditional visualization.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4">
+                <p>Instead, our app would present a person’s relatives in the form of a list. A list is democratic and does not make blind assumptions about who is closer to whom.</p>
+                <p>Tapping on the items of a list would navigate to a details screen (Figure 4 right), and tapping on an Add button would present a screen for adding a new relative into the app (Figure 4 left).</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="graphics/layout-sketch.jpg" class="full-width">
+                <p class="caption">Figure 4: A very rough wireframe.</p>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <h5>Adding a relationship</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4">
+                <img src="graphics/add-relation-options1.jpg" class="full-width">
+                <img src="graphics/add-relation-options2.jpg" class="full-width">
+                <p class="caption">Figure 5: Process of coming up with the way to define a relationship.</p>
+            </div>
+            <div class="col-lg-6">
+                <p>To represent a relationship between a new relative and the existing family members, we decided to let the user define relationship as “the ______ of someone,” like “the aunt of my mom.”</p>
+                <p>We realized that this is an imprecise way of defining a relationship. An aunt can be many things: the sister of the father, the wife of the brother of the mother, etc. As a result, we opted to force a user to define a relationship in more precise terms, such as mother, sister, and son. In Figure 5, the second screen shot is an exploration of this concept. The relationship "partner" is added in later iterations.</p>
+                <p>Screen shots 3 and 4 explore the two differing syntaxes: your grandmother can be described as your “father’s mother” or “the mother of your father.” Initially, I opted for the former, but in paper prototype testing, users found this syntax confusing, so we went with the latter.</p>
+                <p>Furthermore, we decided to use gender-neutral terms when describing relationships, which limits the number of choices to 4 instead of 8, thus decluttering the form. Another part of the form asks for the gender of the relative, and our back-end algorithm figures out the gendered title, like "female child" means "daughter." Gender-neutral terms also gives the option of a relative to identify in a non-binary gender.</p>
+                <p>Lastly, the options of “step” and “adopted/adoptive” addresses the inclusivity concerns we noticed during research. Checking one of the boxes appends the word “step,” “adopted,” or “adoptive” to the relationship name. Including these checkboxes is our effort to normalize these types of relationships that sometimes people feel ashamed about. </p>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <h5>Colors</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4">
+                <p>Considering the color scheme of the app, I looked at two different moods: a bright aqua or orange, representing modernity, or a softer palette of purples, pinks, or blues, conveying the coziness of family. I chose a pastel blue combination because the bright colors are too harsh to convey a sense of family.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="graphics/color-testing.png" class="full-width">
+                <p class="caption">Figure 6: Trying different combinations of color.</p>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <h5>Final Design</h5>
+                <p>To demonstrate the final design, I included some family members in the Tucker-Pritchett household from <i>Modern Family</i>. The screens in the mock-up are from the perspective of Lily, the adopted daughter of Mitchell and Cam. I also included Lily's divorced grandparents, Jay and Dede.</p>
+            </div>
+        </div>
+        <div class="row">
+            <img src="graphics/final-prototype.jpg" class="full-width">
+        </div>
+        <div class="spacer"></div>
+        <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    <h5>Implementation</h5>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-8">
+                <p>I implemented the front-end features with my co-leader Lexi Ryan. We used React Native for building the interface and Redux Thunk for state management. Our back-end developers used the Flask framework in Python3. To store the data, we used a Relational Database (sqlite) with SQLAlchemy as a wrapper so it will be easy to port to psql or mysql.</p>
+            </div>
+            <div class="col-lg-2">
+                <p class="text-center">See it on</p>
+                <a href="https://github.com/Mark-Jung/family-tree" target="_blank"><img src="graphics/GitHub_Logo.png" class="full-width" id="github"></a>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <h5 class="text-center">More projects to come...</h5>
+    </div>
+    <div class="spacer"></div>
+    <div class="container-fluid" id="art">
+        <div class="spacer"></div>
+        <h2 class="text-center subheader" id="art-header">Art & Graphics</h2>
         <div class="row" id="photo-grid">
                 <div class="col-lg-4 col-md-4 col-sm-4">
-                    <p class="text-center gallery-header white">Design</p>
+                    <p class="text-center gallery-header">Design</p>
                     <img src="des/screenshots-icon.jpg" alt="FareShare Screenshots" class="icon" data-toggle="modal" data-target="#fareshare">
                     <div class="image-spacing"></div>
                     <img src="des/optima-icon.jpg" alt="Optima Type Poster" class="icon" data-toggle="modal" data-target="#optima">
@@ -84,7 +248,7 @@
                 </div>
                 
                 <div class="col-lg-4 col-md-4 col-sm-4">
-                    <p class="text-center gallery-header white">Art</p>
+                    <p class="text-center gallery-header">Art</p>
                     <img src="art/jupiter-icon.jpg" alt="Playing God" class="icon" data-toggle="modal" data-target="#jupiter">
                     <div class="image-spacing"></div>
                     <img src="art/anywhere-icon.jpg" alt="Anywhere (Mixed Media)" class="icon" data-toggle="modal" data-target="#anywhere">
@@ -95,7 +259,7 @@
                 </div>
                 
                 <div class="col-lg-4 col-md-4 col-sm-4">
-                    <p class="text-center gallery-header white">Photography</p>
+                    <p class="text-center gallery-header">Photography</p>
                     <img src="photo/Shore-icon.jpg" alt="Self Portrait by the Water" class="icon" data-toggle="modal" data-target="#shore">
                     <div class="image-spacing"></div>
                     <img src="photo/Ivy-icon.jpg" alt="Ivy" class="icon" data-toggle="modal" data-target="#ivy">
@@ -108,7 +272,7 @@
             </div>
         <div class="spacer"></div>
         <div class="spacer"></div>
-        <h2 class="text-center white">Thank you for stopping by!</h2>
+        <h2 class="text-center subheader">Thank you for stopping by!</h2>
         <div class="spacer"></div>
     </div>
 
@@ -321,37 +485,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- to make the scrolling cool -->
-    <script>
-        $(window).scroll(function() {
-            // selectors
-            var $window = $(window),
-                $body = $('body'),
-                $panel = $('.panel');
-            
-            // Change 33% earlier than scroll position so colour is there when you arrive.
-            var scroll = $window.scrollTop() + ($window.height()/ 2);
-            
-            $panel.each(function () {
-                var $this = $(this);
-                
-                // if position is within range of this panel.
-                // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-                // Remember we set the scroll to 33% earlier in scroll var.
-                if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-                    
-                // Remove all classes on body with color-
-                $body.removeClass(function (index, css) {
-                    return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-                });
-                
-                // Add class of currently active div
-                $body.addClass('color-' + $(this).data('color'));
-                }
-            });    
-  
-}).scroll();
-    </script>
 </body>
 </html>

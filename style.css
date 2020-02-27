@@ -1,43 +1,54 @@
 /* navbar */
 .navbar{
-    background-color: #f4fafa;
+    background-color: #000000;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.07);
 }
 
 #navbar-logo{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway';
     font-weight: bold;
+    color: white;
 }
 
-.nav-item{
-    font-family: 'Lato', sans-serif;
+.nav-link{
+    font-family: 'Raleway';
+    color: #eeeeee;
 }
 
 .nav-link.active{
-    color: #4f3a65!important;
+    color: #4f3a65;
 }
 
-#linkedin{
+.social{
     height: 28px;
     padding-right: 2px;
+    margin-left: 15px;
 }
 
 /* fonts in general */
-.subheader{
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    line-height: 2;
-}
-
-h5{
-    font-family: 'Playfair Display', serif;
-    font-weight: bold!important;
-    font-size: 20pt!important;
-}
 
 p{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway';
     font-size: 15pt;
+}
+
+h1 h2 h3 h5{
+    font-family: 'Raleway';
+    font-weight: bold;
+    line-height: 1;
+}
+
+#bootstrap-overrides .black-link {
+    color: black;
+    text-decoration: underline;
+}
+
+h4{
+    font-family: 'Raleway';
+}
+
+.white {
+    color :white;
 }
 
 .modal-header
@@ -47,7 +58,7 @@ display: block!important;
 
 .modal-title{
     float: left;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway';
     font-size: 20px;
 }
 
@@ -55,14 +66,10 @@ display: block!important;
     float: right;
 }
 
-.large-lato{
-    font-size: 24px;
-}
-
 .gallery-header{
-    font-size: 28px;
+    font-size: 35px;
+    font-weight: 700;
     margin-bottom: 8px;
-    color: white;
 }
 
 .spacer{
@@ -77,36 +84,8 @@ display: block!important;
     font-size: 14px;
 }
 
-/* about section */
-
-#about-text{
-    font-size: 22px;
-    color: white;
-}
-
-#about{
-    background-color: #32315f;
-    color: white;
-    width: 100%;
-    padding: 50px 0;
-}
-
-/* design portfolio */
-#fam-logo{
-    width: 100%;
-    margin-top: -50px;
-}
-
-.fancy-name{
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-}
 
 /* for in-line images */
-.full-width{
-    width: 100%;
-}
-
 .icon{
     width: 80%;
     transition: 0.3s;
@@ -120,34 +99,8 @@ display: block!important;
     cursor: pointer;
 }
 
-.half-width{
-    width: 50%;
-}
-
-#github{
-    margin-top: -20px;
-}
-
-#github:hover {
-    opacity: 0.7;
-    transition: opacity 0.3s;
-}
-
-.smalltext{
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    line-height: 1;
-    padding-top: 10px;
-}
-
-/* art section */
-#art{
-    background: rgb(87,79,125);
-background: linear-gradient(180deg, rgba(87,79,125,1) 0%, rgba(149,173,190,1) 9%, rgba(223,240,234,1) 13%, rgba(255,255,255,1) 22%);
-}
-
-#art-header{
-    color: white;
+#bag{
+    width: 100%;
 }
 
 /* for blockquotes */
@@ -171,3 +124,33 @@ background: linear-gradient(180deg, rgba(87,79,125,1) 0%, rgba(149,173,190,1) 9%
         padding-top: 40px;
     }
 }
+
+
+/* for cool scrolling */
+  body {
+    color: #000;
+    background-color: #f4f4f4;
+    transition: background-color 1s ease;
+  }
+  
+  /* panel styles */
+  .panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
+  }
+  
+  /* colours */
+  .color-black {
+      background-color: #222222;
+  }
+  .color-white {
+      background-color: white;
+  }
+  .color-red {
+    background-color: #DE311E;
+  }
