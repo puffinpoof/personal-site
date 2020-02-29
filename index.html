@@ -24,7 +24,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="10" id="bootstrap-overrides">
     <!---->
     <!-- Collapsible navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="#" id="navbar-logo">Amy Yang</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,10 +33,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#work">work</a>
+                    <a class="nav-link white" href="#work">work</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">about</a>
+                    <a class="nav-link white" href="#about">about</a>
                 </li>
             </ul>
             <ul class="navbar-nav navbar-right">
@@ -50,28 +50,18 @@
         </div>
     </nav>
 
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-
     <div class="container panel" data-color="white">
+        <div class="spacer"></div>
         <div class="row">
-            <div class="col-lg-4">
-                <img id="bag" src="graphics/bag2.png" alt="Amy's mixed bag of skills">
-            </div>
-            <div class="col-lg-7">
-                <div class="spacer"></div>
-                <h1>oh hi.</h1>
-                <h1>are you here to see my work?</h1>
-                <div class="spacer"></div>
-                <h4>if so, you're at the right place!</h4>
-                <h4>otherwise, enjoy this video about <a href="https://www.youtube.com/watch?v=Hzk1bM2vVFU" target="_blank" class="black-link">carnivorous plants</a>.</h4>
+            <div class="col-md-1"></div>
+            <div class="col-md-9">
+                <img class="img-fluid" src="art/portrait.png" alt="Welcome to my website">
             </div>
         </div>
-        <div class="spacer"></div>
     </div>
-
    
     <div class="container-fluid panel" id="work" data-color="black">
+        <div class="spacer"></div>
         <div class="spacer"></div>
         <div class="row" id="photo-grid">
                 <div class="col-lg-4 col-md-4 col-sm-4">
@@ -110,8 +100,29 @@
                 
             </div>
         <div class="spacer"></div>
-        <h2 class="text-center white">Thanks for stopping by!</h2>
-        <h5 class="text-center white">This website is made by me. Here it is on <a href="https://github.com/puffinpoof/puffinpoof.github.io" target="_blank">GitHub</a>.</h5>
+        
+    </div>
+
+    
+    <div class="container panel" data-color="white" id="about">
+        <div class="spacer"></div>
+        <img id="bag" src="graphics/bag2.png" alt="Amy's mixed bag of skills">
+        <div class="spacer"></div>
+        <div class="container">
+            <h2 class="text-center subheader">About</h2>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" id="about-text">
+                    <p>“What do you want to do when you grow up?” was a question I had trouble answering. In many people’s eyes, my love of art and literature contradicted my knack for math and computer science. </p>
+                    <p>In my first software engineering internship last summer, I happened to sit in on a UX design working session, and I found a place where these disparate parts of my life came together: the visual thinking acquired from years of designing graphics and making art, the empathy accumulated from reading broadly, and the front-end technical skills that help me understand the implementation of UI elements. </p>
+                    <p>I care deeply about making software accessible and delightful to use. It’s not something that could be brushed aside the way some engineers do; good design helps a product fulfill its purpose and expand its impact.</p>
+                    <p>This is what I want to do.</p>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <h2 class="text-center">Thanks for stopping by!</h2>
+        <h5 class="text-center">This website is made by me. Here it is on <a href="https://github.com/puffinpoof/puffinpoof.github.io" target="_blank">GitHub</a>.</h5>
         <div class="spacer"></div>
     </div>
 
