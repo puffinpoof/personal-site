@@ -4,19 +4,19 @@
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.07);
 }
 
-#navbar-logo{
-    font-family: 'Raleway';
-    font-weight: bold;
+#bootstrap-overrides #navbar-logo{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
     color: white;
 }
 
-.nav-link{
-    font-family: 'Raleway';
-    color: #eeeeee;
+#bootstrap-overrides .nav-link{
+    font-family: 'Roboto', sans-serif;
+    color: #abb3c0;
 }
 
-.nav-link.active{
-    color: #4f3a65;
+#bootstrap-overrides .nav-link.active{
+    color: #d6e0f0;
 }
 
 .social{
@@ -25,20 +25,39 @@
     margin-left: 15px;
 }
 
+.social:hover{
+    height: 31px;
+    padding-right: 1px;
+    margin-left: 13px;
+    transition: 0.3s;
+}
+
 /* fonts in general */
 
 p{
-    font-family: 'Raleway';
+    font-family: 'Roboto', sans-serif;
     font-size: 15pt;
 }
 
-h1{
-    font-family: 'Indie Flower';
+#bootstrap-overrides h1{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.2rem;
 }
 
-h2 h3 h5{
-    font-family: 'Raleway';
-    font-weight: bold;
+#bootstrap-overrides h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+a.red{
+    color: #ff8586;
+}
+
+a.red:hover{
+    color: #ff4e4f;
+    transition: 0.5s ease;
 }
 
 #bootstrap-overrides .black-link {
@@ -46,12 +65,12 @@ h2 h3 h5{
     text-decoration: underline;
 }
 
-h4{
-    font-family: 'Raleway';
-}
-
 .white {
     color :white;
+}
+
+.light {
+    color: #d6e0f0;
 }
 
 .modal-header
@@ -61,7 +80,8 @@ display: block!important;
 
 .modal-title{
     float: left;
-    font-family: 'Raleway';
+    font-family: 'Playfair Display';
+    font-weight: 600;
     font-size: 20px;
 }
 
@@ -86,12 +106,10 @@ display: block!important;
 
 /* for in-line images */
 .icon{
-    width: 80%;
     transition: 0.3s;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+    border-radius: 8px;
+    width:100%;
 }
 
 .icon:hover{
@@ -110,6 +128,28 @@ display: block!important;
 .up-down-padding{
     padding: 20px 0;
 }
+
+/* 2020 new gallery */
+.title-wrapper{
+    padding-top: 60px;
+    color: #d6e0f0;
+}
+
+.design-description{
+    color: #d6e0f0;
+}
+
+.design-block{
+    padding: 60px 45px;
+    background-color: #272930;
+    border-radius: 16px;
+    margin: 30px 20em;
+}
+
+.gallery{
+    margin:30px;
+}
+
 
 /* desktop only */
 @media screen and (min-width: 768px){
@@ -131,25 +171,14 @@ display: block!important;
 
 /* for cool scrolling */
   body {
-    color: #000;
     background-color: #f4f4f4;
     transition: background-color 1s ease;
   }
-  
-  /* panel styles */
-  .panel {
-    /* min height incase content is higher than window height */
-    /* min-height: 100vh; */
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
-    /* outline: 10px solid hotpink; */
-    /* turn above on to see the edge of panels */
-  }
+
   
   /* colours */
   .color-black {
-      background-color: #222222;
+      background-color: #393b44;
   }
   .color-white {
       background-color: white;
