@@ -51,8 +51,14 @@ p{
     font-weight: 600;
 }
 
+a.dark{
+    color: #393b44;
+    text-decoration: underline solid #ff8586;
+}
+
 a.red{
-    color: #ff8586;
+    color: #d6e0f0;
+    text-decoration: underline solid #ff8586;
 }
 
 a.red:hover{
@@ -70,7 +76,7 @@ a.red:hover{
 }
 
 .light {
-    color: #d6e0f0;
+    color: #d9d6f0;
 }
 
 .modal-header
