@@ -159,15 +159,45 @@ display: block!important;
 
 /* desktop only */
 @media screen and (min-width: 768px){
-
+    #portrait-mobile, #intro-mobile{
+        display: none;
+    }
 }
 
 /* mobile only */
 @media screen and (max-width: 768px){
+    #portrait-desktop{
+        display: none;
+    }
 
+    #portrait-mobile{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .title-wrapper{
+        padding-top: 30px;
+    }
+
+    .design-block{
+        padding: 20px 5px;
+    }
+
+    .icon{
+        margin: 10px 0;
+    }
+
+    #bootstrap-overrides h1{
+        font-size: 1.9rem;
+        margin: 0;
+    }
+
+    #bootstrap-overrides h3{
+        font-size: 1.4rem;
+    }
 }
 
-/* adjustments in between */
+/* larger screen sizes */
 @media screen and (min-width: 1200px){
     #header-name{
         padding-top: 40px;
