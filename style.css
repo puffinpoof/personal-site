@@ -41,8 +41,7 @@ p{
 
 #bootstrap-overrides h1{
     font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2.2rem;
 }
 
@@ -76,7 +75,7 @@ a.red:hover{
 }
 
 .light {
-    color: #d9d6f0;
+    color: #c2bee5;
 }
 
 .modal-header
