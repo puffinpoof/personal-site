@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS spreadsheet -->
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta property="og:site_name" content="Amy Yang's Portfolio"/>
+    <meta property="og:title" content="Amy Yang's Portfolio"/>
+    <meta property="og:description" content="I'm an aspiring UX designer with projects in product design and front-end development."/>
+    <meta property="og:image" content="art/portrait-mobile.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <title>CRM Case study</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="10" id="bootstrap-overrides">
+    <!---->
+    <!-- Collapsible navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://amy-yang.me/#work">&#8592  Projects</a> 
+                </li>
+                <li class="nav-item"><a class="nav-link">•</a></li>
+                <li class="navbar-nav mr-auto">
+                    <a class="nav-link title">Facilitating the Efficient Recruitment of Grad Students in a CRM</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/puffinpoof/" target="_blank"><img class="social" src="../graphics/instagram.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/amy-yang0/" target="_blank"><img class="social" src="../graphics/linkedin-logo.png"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="background-color: #404040;">
+        <div class="row">
+            <div class="col-xl-10 offset-xl-1">
+                <img class="project-header-img" src="archa-graphics/comparison.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12"><h1>Facilitating the Efficient Recruitment of Grad Students in a CRM</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="line"></div>
+                <h4>Introduction</h4>
+                <div class="line"></div>
+                <p>I worked on this project during my internship at <a href="https://www.allcampus.com/">All Campus</a>, a higher-ed marketing company. Archa is a CRM (customer relationship management) software. The prospect table feature in Archa help enrollment advisors reach out to leads (prospective students) and recruit them for graduate programs. The table lists the prospective students of different programs and their personal information. Enrollment advisors use the call or email feature to contact leads and record their information and status in the table.</p>
+            </div>
+            <div class="col-lg-6">
+                <img class="inline" src="archa-graphics/advisor.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="line"></div>
+                    <h4>Problem</h4>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="vertical-center">
+                    <p>I was tasked with working with another designer to <b>redesign the page following a new design system</b> and <b>improve its usability</b>.</p>
+                    <p>We conducted user research through <b>interviewing 2 enrollment advisors, observing an advisor reach out to 20+ prospects, and analyzing survey responses from 21 advisors</b>, some of whom used a competitor software. Our research uncovered the following issues, which we addressed in the redesign. &#10141</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <ol>
+                    <li class="text">The way the “priority rating” ranks the leads doesn’t take time zones into account, so some leads cannot be called even though they’re “high priority.”</li>
+                    <li class="text">Currently the history of communication between the advisor and a lead can only be accessed by opening a modal. How might we give advisors a summary of their past interactions in a way that’s more easily accessible?</li>
+                    <li class="text">The UI of the prospect table is cluttered, unaligned, and confusing. How might we represent different functionalities more clearly in the UI?</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="line"></div>
+                    <h4>1. Helping enrollment advisors determine which leads to call</h4>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="full-width horizontal-center" src="archa-graphics/stars.png">
+                <p class="caption">The table displays the priority column as a number of stars.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="vertical-center">
+                    <p>The Archa platform automatically assigns a priority rating to the leads in the system, and ideally all an advisor needs to do is go down the list and dial each number. However, we found through user interviews that <b>prospects ranked as high priority were sometimes in time zones that made them unreachable</b> (regulations dictate that prospects may only be called 8am-8pm). Hence, advisors always manually check the prospect’s information before dialing.</p>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-8 offset-lg-2">
+                <h4>How might we communicate the availability of the leads to enrollment advisors?</h4>
+                <p>To make it easier for advisors to avoid calling prospects at inappropriate times, I explored different ways of making it obvious when a prospect is un-callable.</p>
+            </div>
+    </div>
+</body>
