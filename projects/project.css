@@ -40,12 +40,15 @@ p, li.text{
     margin: 0.5rem 0;
 }
 
+ol{
+    padding-inline-start: 20px;
+}
 
 #bootstrap-overrides h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 3rem;
-    padding: 2rem 0 0.6rem 0;
+    padding: 1rem 0 0.6rem 0;
 }
 
 #bootstrap-overrides h2{
@@ -55,14 +58,19 @@ p, li.text{
 }
 
 #bootstrap-overrides h3{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 0.75rem;
 }
 
 #bootstrap-overrides h4{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
-    font-style: bold;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style:  italic;
 }
 
 p.caption{
@@ -88,17 +96,37 @@ a.red:hover{
 }
 
 /* Images */
+img.full-width{
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+}
 
+img.padding{
+    padding: 1rem 0 1rem 0;
+}
+
+/*img:not(social){
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 0.5px;
+    border-color: #000;
+}*/
 
 .project-header-img{
     padding: 54px 0 0 0;
     width: 100%;
 }
 
+img.call{
+    width: 50%;
+    padding: 1rem 0;
+    max-height: auto;
+}
+
 @media (max-width: 992px){
     img.inline{
         width: 100%;
-        padding: 0.5rem 0 1.1rem 0;
+        margin: 0.5rem 0 1.1rem 0;
     }
 }
 
@@ -107,9 +135,15 @@ a.red:hover{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        padding: 1rem 0 1.1rem 0;
+        margin: 1rem 0 1.1rem 0;
         height: auto;
         max-width: 90%;
+    }
+
+    .vertical-center{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -125,13 +159,20 @@ a.red:hover{
     margin: 0.6rem 0 0.7rem 0;
 }
 
-.vertical-center{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.line.upper{
+    border-style: solid;
+    border-width: 10px;
 }
 
 .horizontal-center{
     display: block;
     margin: auto;
+}
+
+#bootstrap-overrides .container{
+    padding: 1em 0;
+}
+
+.footer-link{
+    margin-bottom: 3rem;
 }

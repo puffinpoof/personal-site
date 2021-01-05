@@ -70,18 +70,20 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="line"></div>
-                <h4>Introduction</h4>
+                <h3>Introduction</h3>
                 <div class="line"></div>
                 <p>I worked on this project during my internship at <a href="https://www.allcampus.com/">All Campus</a>, a higher-ed marketing company. Archa is a CRM (customer relationship management) software. The prospect table feature in Archa help enrollment advisors reach out to leads (prospective students) and recruit them for graduate programs. The table lists the prospective students of different programs and their personal information. Enrollment advisors use the call or email feature to contact leads and record their information and status in the table.</p>
             </div>
             <div class="col-lg-6">
-                <img class="inline" src="archa-graphics/advisor.jpg">
+                <img class="inline padding" src="archa-graphics/advisor.jpg">
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="line"></div>
-                    <h4>Problem</h4>
+                    <h3>Problem</h3>
                 <div class="line"></div>
             </div>
         </div>
@@ -100,16 +102,18 @@
                 </ol>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="line"></div>
-                    <h4>1. Helping enrollment advisors determine which leads to call</h4>
+                    <h3>1. Helping enrollment advisors determine which leads to call</h3>
                 <div class="line"></div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <img class="full-width horizontal-center" src="archa-graphics/stars.png">
+                <img class="horizontal-center padding" src="archa-graphics/stars.png">
                 <p class="caption">The table displays the priority column as a number of stars.</p>
             </div>
             <div class="col-lg-6">
@@ -118,9 +122,159 @@
                 </div>
             </div>
         </div>
-            <div class="col-lg-8 offset-lg-2">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="line"></div>
                 <h4>How might we communicate the availability of the leads to enrollment advisors?</h4>
                 <p>To make it easier for advisors to avoid calling prospects at inappropriate times, I explored different ways of making it obvious when a prospect is un-callable.</p>
+                <div class="line"></div>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="horizontal-center call" src="archa-graphics/call-1.png">
+                <p>The first solution that came to mind is by providing an obvious visual indication of when a prospect is outside the callable time frame, such as by highlighting the time in gray.</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="horizontal-center call" src="archa-graphics/call-2.png">
+                <p>The second is by disabling the “call” icon button in the “actions” column of the table. This prevents advisors from overlooking the time difference and calling someone who is unavailable.</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="horizontal-center call" src="archa-graphics/call-3.png">
+                <p>I also explored replacing the phone icon button with a link button of the phone number, which is disabled when a prospect is un-callable. A link button is that it has a greater clickable target than an icon, but it is less compact. </p>
+            </div>
+        </div>
+    </div>
+    <div class=container>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="line"></div>
+                    <h3>2. Providing the relevant context of each lead</h3>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>Besides the basic information shown in the cells of the table, an advisor would also like to know <b>the history of communication between the prospect and the advisor</b> to inform what they say on the call. Currently, the full history could be accessed by opening a tray with the prospect’s information, but sometimes advisors just need a quick overview. Users suggested making this information more accessible, such as showing some notes when hovering on an icon in the table instead of having to click open the tray.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="full-width" src="archa-graphics/tray-history.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="vertical-center">
+                <h4>Using tooltips to communicate context</h4>
+                <p>In my prototypes, I explored modifying the Last Advisor Communication field to show extra information in a tooltip. I used the light-blue highlight as a signifier of the existence of additional information whenever there is a tooltip. One possibility is showing the details of the most recent communication and the relevant notes. Another possibility is showing a short summary of the past three interactions between the advisor and the prospect. Further user interviews are needed to determine which would be the more relevant information.</p></div>
+            </div>
+            <div class="col-lg-6">
+                <img class="horizontal-center padding" src="archa-graphics/context-1.gif">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="vertical-center">
+                <h4>Communicating why a prospect has high priority</h4>
+                <p>Another piece of information relevant to an advisor is the reason a prospect is ranked as “high priority.” Currently, there is a column dedicated to this information called “Needs Attention Flag.” However, only prospects with the highest priority has this tag, and it seemed to be an inefficient use of column space. I explored showing this information as a tooltip as well.
+                </p></div>
+            </div>
+            <div class="col-lg-6">
+                <img class="horizontal-center padding" src="archa-graphics/context-2.gif">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="line"></div>
+                    <h3>3. Communicating functionalities more clearly in the toolbar</h3>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="full-width" src="archa-graphics/toolbar-original.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>Many aspects of the prospect table page confused me when I first encountered it. Part of it was due to the lack of industry knowledge, but part of it I attributed to the ambiguous usages of icon buttons, like in the toolbar of the prospect table.
+                </p>
+                <p>What do the above icons all mean? (They represent, in order, “download excel file of prospects,” “show bookmarks,” “show prospects on a map,” “clear filters,” and “show filter settings.”) Icons are being used in confusing ways — a trash icon usually represents deleting something, not clearing filters.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="full-width" src="archa-graphics/toolbar-1.png">
+                <img class="full-width" src="archa-graphics/toolbar-2.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-6">
+                <h4>A new toolbar with link buttons and filtering</h4>
+                <p>User research from the <a href="https://www.nngroup.com/articles/icon-usability/">Nielson Norman Group</a> suggests that sets of non-standard icons need some other means, like text labels, to elucidate meaning and prevent user confusion. To eliminate ambiguities, I changed the icon buttons in the toolbar to link buttons that more clearly represent each functionality. Instead of representing “clear filters” with a trash can, I used an “X,” which I think more often associated with clearing a field as opposed to the trash can, which is associated with “delete.”
+                </p>
+                <p>Furthermore, I discovered through user interviews that the priorities of advisors change depending on where they are in the recruitment cycle. Most of the time they start their day with new leads, but if an application deadline is coming up, they may focus on helping prospects with incomplete applications finish applying. As a result, it’s important to offer flexibility through features like filtering and bookmarking that let advisors pull up the right list of prospects depending on where they are in the recruitment cycle. In the new design, I exposed the filtering functionality in the default view and decreased the number of clicks it would take to access and set up filtering.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="line"></div>
+                    <h3>Putting it together</h3>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="vertical-center">
+                <p>While there is a comprehensive style guide for our new design system, the existing Figma components we had were frustrating to use. I re-built several components, such as table cells and columns, so we could prototype faster by pulling them in and resizing them. I also set up the Data Lab plugin in Figma to quickly populate the table with realistic dummy data.
+                </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="horizontal-center full-width" src="archa-graphics/re-sizable.gif">
+                <p class="caption">Building scalable components in Figma.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="full-width padding" src="archa-graphics/comparison.png">
+                <h4>Conclusion</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>I put together the design proposals in an interactive prototype, but my internship ended before I could conduct further user testing or see it get implemented. I handed off my progress to the other designer who was working on this project. I still greatly enjoyed the process of learning about the workflows of enrollment advisors and supporting them by improving the software their work depends on. I also learned a lot about different ways of delivering information, like tooltips, icon text labels, and button states, and how they can be used in different steps in the workflow to provide users with the information they need.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <p>If I had more time, I would explore some uncertainties I have about this design. My greatest doubt is whether the internal expert users we had access to were actually representative of the external users that the company hope to have in the future. Would new users interact with the software differently than our current internal users? Would they have further points of confusion that this prototype might not address? Would they have different needs and workflows that we didn't consider?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 style="text-align:center">Thank you for viewing!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <p style="footer-link"><a href="http://amy-yang.me/#work">
+                    View All Projects
+                </a></p>
+            </div>
+            <div class="col-lg-6">
+                <p style="footer-link"><a href="https://medium.com/@puffinpoof/re-designing-the-multi-list-picker-376d4e44c012">
+                    Next Project: Redesigning the Multi List Picker
+                </a></p>
+            </div>
+        </div>
     </div>
 </body>
