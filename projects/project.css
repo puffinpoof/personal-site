@@ -38,6 +38,7 @@ p, li.text{
     font-family: 'Roboto', sans-serif;
     font-size: 0.95rem;
     margin: 0.5rem 0;
+    color: #242424;
 }
 
 ol{
@@ -45,7 +46,7 @@ ol{
 }
 
 #bootstrap-overrides h1{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 3rem;
     padding: 1rem 0 0.6rem 0;
@@ -59,18 +60,18 @@ ol{
 
 #bootstrap-overrides h3{
     font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: bold;
-    background-color: black;
+    /*background-color: black;
     color: white;
     padding: 0.75rem;
+    margin-top: 1rem;*/
 }
 
 #bootstrap-overrides h4{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-style:  italic;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 p.caption{
@@ -80,18 +81,13 @@ p.caption{
     text-align: center;
 }
 
-a.dark{
-    color: #393b44;
-    text-decoration: underline solid #ff8586;
-}
-
 a.red{
-    color: #d6e0f0;
-    text-decoration: underline solid #ff8586;
+    color: #383838;
+    text-decoration: underline solid #ff8586 2px;
 }
 
 a.red:hover{
-    color: #ff4e4f;
+    color: #ED0500;
     transition: 0.5s ease;
 }
 
@@ -102,7 +98,7 @@ img.full-width{
 }
 
 img.padding{
-    padding: 1rem 0 1rem 0;
+    padding: 1.5rem 0 1.5rem 0;
 }
 
 /*img:not(social){
@@ -164,15 +160,25 @@ img.call{
     border-width: 10px;
 }
 
+.box{
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
 .horizontal-center{
     display: block;
     margin: auto;
 }
 
 #bootstrap-overrides .container{
-    padding: 1em 0;
+    padding: 2em 0;
 }
 
 .footer-link{
-    margin-bottom: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer{
+    margin: 2rem 0 5rem 0;
 }
