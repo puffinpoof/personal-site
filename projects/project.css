@@ -36,7 +36,7 @@
 
 p, li.text{
     font-family: 'Roboto', sans-serif;
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin: 0.5rem 0;
     color: #242424;
 }
@@ -94,7 +94,7 @@ a.red:hover{
 /* Images */
 img.full-width{
     width: 100%;
-    padding: 1rem 0 1rem 0;
+    padding-top: 12px;
 }
 
 img.padding{
@@ -118,6 +118,7 @@ img.call{
     padding: 1rem 0;
     max-height: auto;
 }
+
 
 @media (max-width: 992px){
     img.inline{
@@ -184,5 +185,5 @@ img.call{
 }
 
 .footer{
-    margin: 2rem 0 5rem 0;
+    margin: 0 0 5rem 0;
 }
