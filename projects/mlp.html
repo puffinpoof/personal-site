@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS spreadsheet -->
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta property="og:site_name" content="Amy Yang's Portfolio"/>
+    <meta property="og:title" content="Amy Yang's Portfolio"/>
+    <meta property="og:description" content="I'm an aspiring UX designer with projects in product design and front-end development."/>
+    <meta property="og:image" content="art/portrait-mobile.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <title>Redesigning the Multi List Picker</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="10" id="bootstrap-overrides">
+    <!---->
+    <!-- Collapsible navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://amy-yang.me/#work">&#8592  Projects</a> 
+                </li>
+                <li class="nav-item"><a class="nav-link">•</a></li>
+                <li class="navbar-nav mr-auto">
+                    <a class="nav-link title">Redesigning the Multi List Picker</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/puffinpoof/" target="_blank"><img class="social" src="../graphics/instagram.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/amy-yang0/" target="_blank"><img class="social" src="../graphics/linkedin-logo.png"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="background-color: #F3F8FB;">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="project-header-img" src="mlp-graphics/header.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container title">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 style="text-align: center;">Redesigning the Multi List Picker</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <p>In fall 2019, I was a product design intern at Relativity, an enterprise software company in the process of creating a brand new design system. I contributed to designing new components, such as the Multi List Picker, based on the new visual style. My process included researching how similar components are used internally and externally and creating high-fidelity prototypes.</p> 
+                
+                <p>A Multi List Picker includes two lists, and lets the user transfer items from one to the other. Usually the former is a list of unselected choices, the latter shows the selected choices.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="full-width padding" src="mlp-graphics/original-1.png">
+                <p class="caption">This is what the original Multi List Picker component looked like.</p>
+
+                <img class="full-width padding" src="mlp-graphics/original-2.png">
+                <p class="caption">Other versions of Multi List Pickers I found across the software.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="line"></div>
+            <h3>The Problem</h3>
+            <div class="line"></div>
+            <p>I audited all the instances of Multi List Pickers in the Relativity software and identified these usability issues:</p> 
+            <ul>
+                <li class="text">The clickable target areas of the arrows icons in the middle of the Multi List Pickers are very small, considering that they are an important action on the page.
+                </li>
+                <li class="text">The “transfer selected” button (single arrow) can be easily confused with the “transfer all” button (double arrows).</li>
+                <li class="text">There are many use cases of Multi List Pickers across the software, and they are <b>inconsistent</b> in their designs. I found more than three variations to the “official” Multi List Picker. Two examples are shown below.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <row>
+            <div class="col-lg-8 offset-lg-2">
+                <div class="line"></div>
+                <h3>The Solution</h3>
+                <div class="line"></div>
+                <p>The solution includes not one but two components: the Basic Multi List Picker and the Advanced Multi List Picker.</p> 
+            </div>
+        </row>
+        <img class="horizontal-center padding" src="mlp-graphics/new-basic.png">
+        <p class="caption">Basic Version</p>
+
+        <img class="horizontal-center padding" src="mlp-graphics/new-advanced.png">
+        <p class="caption">Advanced Version</p>
+
+        <row>
+            <div class="col-lg-8 offset-lg-2">
+                <p>Here is how the new design addresses the problems:</p>
+                <ul>
+                    <li class="text">It follows with the visual style of the new design system. The component makes use of the new components other designers made, like checkboxes and tables.</li>
+                    <li class="text">The two versions of the component address different use cases within the software. The Advanced version can be used when multiple columns of data need to be displayed for each item. When only the name of an item is relevant, the Basic version suffices.</li>
+                    <li class="text">The new icon buttons address the problems of target size and differentiation. The “transfer all” button takes on the secondary button style in the design system, whereas the “transfer selected” button takes on the primary button style to indicate priority. Additionally, when no items are selected, the “transfer selected” buttons are in a disabled state.</li>
+                </ul>
+            </div>
+        </row>
+
+        <img class="horizontal-center padding" src="mlp-graphics/button-styles.png">
+        <p class="caption">The icon buttons use the various button styles of the new design system.</p>
+    </div>
+    
+    <div class="container">
+        <row>
+            <div class="col-lg-8 offset-lg-2">
+                <div class="line"></div>
+                <h3>The Process</h3>
+                <div class="line"></div>
+                <p>The solution includes not one but two components: the Basic Multi List Picker and the Advanced Multi List Picker.</p> 
+
+                <p>My first step was understanding what the Multi List Picker is and how it is used. I did not have access to statistics about the usage of the component, so I went about my research in a more manual way. I looked through the software to find all use cases of this component, with the help of tutorials that led me to parts of the software I wasn’t previously aware of. (It takes employees and clients 1 month of studying to be certified for this software, which speaks to its complexity.) This helped me understand the contexts in which this component appears and its different use cases, which led me to create a basic version and an advanced version.</p>
+
+                <p>I also considered examples of Multi List Pickers in design systems of other software. This helped me understand the design patterns that exist beyond my company’s software. One example is the Salesforce’s <a href="https://developer.salesforce.com/docs/component-library/bundle/lightning-dual-listbox/example" target="_blank" class="red">Dual Listbox</a> (pictured below), which made me think about how Multi List Pickers can be simplified.</p>
+
+                <img src="mlp-graphics/example.png" class="horizontal-center padding">
+                <p class="caption">A "dual listbox" (which serves a similar function as the Multi List Picker) from Salesforce’s design system.</p>
+
+                <p>With the research in mind, I explored different possibilities of what the Multi List Picker can look like through exploring the iconography and building interactive prototypes in Figma. I showed them to designers and developers who are familiar with the software to get their feedback and iterate on the design. Some examples of my explorations are shown below.</p>
+            </div>
+            <div class="col-lg-12">
+                <img src="mlp-graphics/icons.png" class="horizontal-center padding full-width">
+                <p class="caption">The new UI uses icons from the Streamline icon pack, and I examined five options in from the icon library.
+                </p>
+
+                <img src="mlp-graphics/applying-styles.png" class="horizontal-center padding">
+                <p class="caption">Exploring how different icons would look in buttons, and combining the primary & secondary button style.
+                </p>
+
+                <img src="mlp-graphics/no-buttons.png" class="horizontal-center padding full-width">
+                <p class="caption">Exploring having buttons on the bottom of each list instead of in the middle.
+                </p>
+
+                <img src="mlp-graphics/basic-checkboxes.png" class="horizontal-center padding full-width">
+                <p class="caption">Exploring different ways of selecting items — with or without checkboxes.
+                </p>
+            </div>
+        </row>
+        
+    </div>
+
+    <div class="container">
+        <row>
+            <div class="col-lg-8 offset-lg-2">
+                <div class="line"></div>
+                <h3>Reflection</h3>
+                <div class="line"></div>
+                <p>Throughout the process of creating components for the UI redesign, I gained a deeper understanding of the principles of atomic design and how to create re-useable components. By researching the variations of this component, I identified problems I would like to address, including the need for a simple Multi List Picker and increasing the visual differences between buttons.
+                </p> 
+
+                <p>Throughout this design process, I learned about
+                </p>
+
+                <ul>
+                    <li class="text">Using Figma to create interactive prototypes of components that can be integrated into other interfaces</li>
+                    <li class="text">Creating components that consistently follow the visual language of a design system</li>
+                    <li class="text">Documenting new components as part of a design system
+                    </li>
+                </ul>
+
+                <p>Unfortunately I did not have the opportunity to conduct user tests while designing the component. I would have liked to see how users responded to the new design.</p>
+            </div>
+        </row>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 footer">
+                <h1 style="text-align:center">Thank you for viewing!</h1>
+                <p class="footer-link"><a class="red" href="https://medium.com/@puffinpoof/redesigning-and-developing-the-landing-page-of-a-masters-program-1af81c59697b">
+                    Next Project: Redesigning and Developing the Landing Page of a Master’s Program
+                </a></p>
+                <p class="footer-link"><a class="red" href="http://amy-yang.me/#work">
+                    View All Projects
+                </a></p>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
