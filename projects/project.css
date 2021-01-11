@@ -52,6 +52,10 @@ ol{
     padding: 1rem 0 0.6rem 0;
 }
 
+#bootstrap-overrides h1.standalone{
+    padding: 5rem 0 2.6rem 0;
+}
+
 #bootstrap-overrides h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -111,6 +115,10 @@ img.padding{
 .project-header-img{
     padding: 54px 0 0 0;
     width: 100%;
+}
+
+.header-spacer{
+    margin: 70px 0 0 0;
 }
 
 img.call{

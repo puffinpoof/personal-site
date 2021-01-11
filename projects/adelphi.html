@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS spreadsheet -->
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta property="og:site_name" content="Amy Yang's Portfolio"/>
+    <meta property="og:title" content="Amy Yang's Portfolio"/>
+    <meta property="og:description" content="I'm an aspiring UX designer with projects in product design and front-end development."/>
+    <meta property="og:image" content="../art/portrait-mobile.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <title>Designing a Landing Page</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="10" id="bootstrap-overrides">
+    <!---->
+    <!-- Collapsible navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://amy-yang.me/#work">&#8592  Projects</a> 
+                </li>
+                <li class="nav-item"><a class="nav-link">•</a></li>
+                <li class="navbar-nav mr-auto">
+                    <a class="nav-link title">Redesigning and Developing the Landing Page of a Master’s Program</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/puffinpoof/" target="_blank"><img class="social" src="../graphics/instagram.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/amy-yang0/" target="_blank"><img class="social" src="../graphics/linkedin-logo.png"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--div class="container-fluid" style="background-color: #F3F8FB;">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="project-header-img" src="mlp-graphics/header.png">
+            </div>
+        </div>
+    </div-->
+
+    <div class="container title header-spacer">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 style="text-align: center;" class="standalone">Redesigning and Developing the Landing Page of a Master’s Program
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <p>In the past summer I interned at All Campus, a higher ed marketing company that represents online graduate programs. The company continuously improves the designs of landing pages (pages that a Google search would direct you to) and run A/B tests to see if they increase the conversion rate.</p> 
+                
+                <p>One of our clients, Adelphi University, recently redesigned their homepage, and I was assigned to re-design and develop a responsive landing page of the Adelphi Online Masters of Arts in Art Education program according to the new visual style. The goal of the redesign is to increase the percentage of page visitors who sign up to request more information through the form on the page.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>The original</h3>
+                <img class="full-width" src="adelphi-graphics/original-capture.png">
+            </div>
+            <div class="col-lg-6">
+                <h3>The re-design</h3>
+                <img class="full-width" src="adelphi-graphics/prototype.png">
+                <p class="caption">In the top section, there is a fixed background image of a woman painting. It's difficult to show this in an image, but a screen capture later in this case study shows how the page looks as a user scrolls.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <row>
+            <div class="col-lg-8 offset-lg-2">
+                <div class="line"></div>
+                <h3>Design: exploring ideas through prototyping</h3>
+                <div class="line"></div>
+                <p>In the initial designs, I updated the typography and header styles to the new visual style of adelphi.edu, but stuck close with the layout of the old landing page thinking that it would make for a more accurate A/B test. In contrast to the flat elements of the original design, I created gave the text and image elements visual depth with a light shadow. I also highlighted the form section with a bright-yellow top border, making it stand out more because it's the most important element for converting users. I built the following prototype in Figma.</p> 
+            </div>
+        </row>
+        <row>
+            <div class="col-lg-6 offset-lg-3">
+                <img class="full-width padding" src="adelphi-graphics/prototype1.png">
+            </div>
+        </row>
+        <row>
+            <div class="col-lg-8 offset-lg-2">
+                <p>After presenting my prototypes, my manager encouraged me to be more experimental in terms of layout. I liked how the Adelphi Homepage includes a fixed background that darkens when you scroll through the floating contents of the page.</p> 
+            </div>
+        </row>
+        <row>
+            <div class="col-lg-6 offset-lg-3">
+                <img class="full-width padding" src="adelphi-graphics/adelphiedu.gif">
+                <p class="caption">Inspiration: the Adelphi home page has a fixed background that darkens as you scroll.</p>
+            </div>
+        </row>
+        <row>
+            <div class="col-lg-8 offset-lg-2">
+                <p>I created a new prototype that also grouped content into floating boxes that move over a fixed background, which is a lot more visually interesting than the earlier boxes on a beige background. There is a greater sense of depth. In the Figma prototype, I could not simulate the fixed background, but I managed to build it in HTML/CSS.</p> 
+            </div>
+            <div class="col-lg-6 offset-lg-3">
+                <img class="full-width padding" src="adelphi-graphics/adelphi-desktop.gif">
+            </div>
+        </row>
+    </div>
+
+    <div class="container">
+        <row>
+            <div class="col-lg-8 offset-lg-2">
+                <div class="line"></div>
+                <h3>Development: creating interactive elements on a responsive layout</h3>
+                <div class="line"></div>
+
+                <p>In the development process, I started by creating the page for desktop, and then used media queries to modify the CSS for each smaller screen size. I used Bootstrap to build the page.</p> 
+                <img class="full-width padding" src="adelphi-graphics/adelphi-desktop-responsive.gif">
+
+                <p>On mobile, there is not enough room for a fixed background, so the layout is a lot more vertical.</p>
+            </div>
+        </row>
+        <row>
+            <div class="col-lg-4 offset-lg-4">
+                <img class="full-width padding" src="adelphi-graphics/adelphi-mobile.gif">
+            </div>
+        </row>
+        <row>
+            <div class="col-lg-8 offset-lg-2">
+                <p>
+                    Then, I set off to fine-tune the interactive elements on the landing page. The 3-step form is a design pattern that All Campus has found through A/B tests to be more effective at converting users than a form with all the fields on one page. Hence, my Request Information form has three pages and features a progress bar that tells you which step you are on. I also created a hover state of the “Next” Button as part of the interaction.
+                </p>
+            </div>
+        </row>
+        <row>
+            <div class="col-lg-6 offset-lg-3">
+                <img class="full-width padding" src="adelphi-graphics/adelphi-form-interaction.gif">
+            </div>
+        </row>
+        <row>
+            <div class="col-lg-8 offset-lg-2">
+                <p>
+                    The footer buttons are also highlighted with a thicker border as the cursor hovers over them, similar to the buttons of adelphi.edu.
+                </p>
+            </div>
+        </row>
+        <row>
+            <div class="col-lg-6 offset-lg-3">
+                <img class="full-width padding" src="adelphi-graphics/adelphi-hover-interaction.gif">
+            </div>
+        </row>
+        <row>
+            <div class="col-lg-8 offset-lg-2">
+                <div class="line"></div>
+                <h3>Reflection</h3>
+                <div class="line"></div>
+
+                <p>Before the project, I felt nervous about the prospect of developing a landing page. It was the last week of my internship, and I secretly considered pushing it off so I don’t have to do it. However, I went through with it because I knew it would be a great learning experience. My manager helped me understand the existing code for the old landing page, and to my surprised I managed to develop the page mostly by myself. I asked for help when certain things, like icons, just weren’t working, and my manager showed me workarounds. I feel proud of the end result, and I hope it stands up to the A/B testing that it’s going through!</p> 
+
+                <img class="full-width padding" src="adelphi-graphics/adelphi-desktop.gif">
+            </div>
+        </row>
+    </container>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 footer">
+                <h1 style="text-align:center">Thank you for viewing!</h1>
+                <p class="footer-link" target="_blank"><a class="red" href="https://amyyang0.medium.com/families-dont-fit-in-trees-d3222b9bdf69">
+                    Next Project: Families don't grow on trees
+                </a></p>
+                <p class="footer-link"><a class="red" href="http://amy-yang.me/#work">
+                    View All Projects
+                </a></p>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
