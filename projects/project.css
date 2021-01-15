@@ -49,7 +49,7 @@ ol{
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 3rem;
-    padding: 1rem 0 0.6rem 0;
+    padding: 1rem 0 0.8rem 0;
 }
 
 #bootstrap-overrides h1.standalone{
@@ -72,6 +72,11 @@ ol{
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
     font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.center{
+    text-align:center;
 }
 
 p.caption{
@@ -157,12 +162,16 @@ img.call{
     border-radius: 0.5px;
     border-color: rgba(0, 0, 0, 0.3);
     background-color: #000;
-    margin: 0.6rem 0 0.7rem 0;
+    margin: 0.8rem 0 1rem 0;
 }
 
 .line.upper{
     border-style: solid;
     border-width: 10px;
+}
+
+.line.lower{
+    margin-bottom: 2rem;
 }
 
 .box{
